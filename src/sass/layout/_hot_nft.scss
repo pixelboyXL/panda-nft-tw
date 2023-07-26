@@ -1,0 +1,52 @@
+.hot_nft {
+    position: relative;
+    h2 {
+        text-align: center;
+        margin-bottom: 56px;
+    }
+}
+
+.hot_nft__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+}
+
+.hot_nft__item {
+    &:not(:last-child) {
+        margin-right: 24px;
+    }
+}
+
+.hot_nft__button {
+    min-width: 119px;
+    padding: 16px;
+    color: var(--clearly-white);
+    border-radius: 8px;
+    background-color: var(--panda-btn-rgba);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        cursor: pointer;
+        background-color: var(--panda-light-blue);
+        box-shadow: var(--panda-second-btn-shadow);
+    }
+    &--active {
+        background-color: var(--panda-light-blue);
+        box-shadow: var(--panda-second-btn-shadow);
+    }
+}
+
+.hot_nft__bid_list {
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 56px;
+}
+
+.hot_nft__bid_item {
+    @include small_scale_with_pointer;
+}
+
+.hot_nft__ornament {
+    bottom: 5%;
+    right: 5%;
+}

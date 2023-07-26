@@ -1,0 +1,21 @@
+.partners {
+    padding-bottom: 151px;
+    position: relative;
+}
+
+.partners__list {
+    @include align_list;
+    justify-content: center;
+}
+
+.partners__item {
+    &:not(:last-child) {
+        margin-right: 41px;
+    }
+    @include scale;
+}
+
+.partners__ornament {
+    top: -100%;
+    right: 0;
+}

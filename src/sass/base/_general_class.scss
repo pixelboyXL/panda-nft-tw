@@ -1,0 +1,137 @@
+.container {
+	// width: 100%;
+	width: 1440px;
+	padding-right: 120px;
+	padding-left: 120px;
+	margin: 0 auto;
+	// @include desk {
+	// 	width: 1440px;
+	// }
+}
+
+.primary_font {
+	@include font($fw: 700);
+}
+
+.secondary_font {
+	@include font();
+}
+
+.text_font_1 {
+	@include font($fw: 400);
+}
+
+.text_font_2 {
+	@include font($fs: 14px, $fw: 400, $lh: 24px);
+}
+
+.title_font {
+	@include font($fs: 48px, $fw: 700, $lh: 64px);
+}
+
+.minor_title_font {
+	@include font($fs: 24px, $fw: 700, $lh: 32px);
+}
+
+.price_font_1 {
+	@include font($fw: 700, $lh: 24px);
+}
+
+.price_font_2 {
+	@include font($fw: 500, $lh: 24px);
+}
+
+.primary_font,
+.text_font_1,
+.text_font_2 {
+	color: var(--panda-grey);
+}
+
+.current {
+	color: var(--clearly-white);
+	&::after {
+		content: "";
+		width: 100%;
+		height: 2px;
+		background-color: var(--panda-light-blue);
+		border-radius: 2px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+}
+
+.primary_button {
+	min-width: 175px;
+	padding-top: 12px;
+	padding-right: 16px;
+	padding-bottom: 12px;
+	padding-left: 16px;
+	border-radius: 16px;
+	border: 1px solid var(--panda-light-blue);
+	color: var(--clearly-white);
+	@include scale_with_pointer;
+}
+
+.section {
+	padding-bottom: 160px;
+}
+
+.logo {
+	font-family: Poppins, sans-serif;
+	@include align_list;
+	color: var(--clearly-white);
+	@include scale;
+}
+
+.logo__image {
+	width: 43px;
+	height: 40px;
+	margin-right: 10px;
+}
+
+.ornament {
+	position: absolute;
+	z-index: -1;
+	width: 638px;
+	height: 587px;
+	background: var(--panda-ornament);
+	overflow: hidden;
+	filter: blur(350px);
+}
+
+// .transform_with_scale {
+// 	transition: var(--cubic--bezier);
+// 	&:hover {
+// 		cursor: pointer;
+// 		transform: scale(1.1);
+// 	}
+// }
+
+// .transform_with_small_scale {
+// 	transition: var(--cubic--bezier);
+// 	&:hover {
+// 		cursor: pointer;
+// 		transform: scale(1.05);
+// 	}
+// }
+
+// .transform_color {
+// 	transition: var(--cubic--bezier);
+// 	&:hover {
+// 		color: var(--panda-light-blue);
+// 	}
+// }
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}

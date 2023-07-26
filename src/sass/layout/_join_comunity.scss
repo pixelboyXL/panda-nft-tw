@@ -1,0 +1,25 @@
+.join_comunity__wrap {
+    padding-top: 48px;
+    padding-right: 205px;
+    padding-bottom: 48px;
+    padding-left: 205px;
+    text-align: center;
+    border-radius: 16px;
+    background-color: var(--panda-light-blue);
+    .title_font {
+        margin-bottom: 24px;
+    }
+    .text_font_1 {
+        margin-bottom: 40px;
+        color: var(--clearly-white);
+    }
+}
+
+.join_comunity__button {
+    min-width: 239px;
+    padding: 16px;
+    border-radius: 16px;
+    color: var(--panda-light-blue);
+    background-color: var(--clearly-white);
+    @include scale_with_pointer;
+}

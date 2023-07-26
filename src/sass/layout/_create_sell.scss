@@ -1,0 +1,46 @@
+.create_sell__title {
+    max-width: 583px;
+    text-align: center;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 56px;
+    margin-left: auto;
+}
+
+.create_sell__list {
+    @include align_list;
+}
+
+.create_sell__item {
+    padding-top: 56px;
+    padding-right: 42px;
+    padding-bottom: 56px;
+    padding-left: 32px;
+    border-radius: 16px;
+    background-color: var(--panda-light-grey);
+    text-align: center;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+    &:nth-child(2) {
+        background-color: transparent;
+        border: 1px solid var(--clearly-white);
+    }
+    @include scale_with_pointer;
+}
+
+.create_sell__icon_wrap {
+    width: 80px;
+    height: 80px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 48px;
+    margin-left: auto;
+    padding: 23px;
+    border-radius: 40px;
+    background-color: var(--panda-light-blue);
+}
+
+.create_sell__minor_title {
+    margin-bottom: 24px;
+}

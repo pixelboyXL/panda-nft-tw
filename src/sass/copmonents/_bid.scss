@@ -1,0 +1,92 @@
+.bid_list {
+    display: flex;
+}
+
+.bid_item {
+    padding: 24px;
+    border-radius: 16px;
+    background-color: var(--panda-light-grey);
+    @include scale_with_pointer;
+}
+
+.bid_image_wrap {
+    position: relative;
+}
+
+.bid_image {
+    margin-bottom: 24px;
+}
+
+.bid_icon_wrap {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 20px;
+    background-color: var(--clearly-white);
+}
+
+.bid_icon {
+    color: var(--panda-heart-grey);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        color: var(--panda-heart-pink);
+    }
+    &--pink {
+        color: var(--panda-heart-pink);
+    }
+}
+
+.bid_name_price_wrap {
+    @include align_list;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.bid_name,
+.bid_pre_price {
+    margin-bottom: 8px;
+}
+
+.bid_author {
+    @include align_list;
+    color: var(--clearly-white);
+    &::before {
+        content: "";
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+        background-image: url(../images/artist_mini.png);
+    }
+}
+
+.bid_price {
+    text-align: right;
+}
+
+.bid_time_wrap {
+    @include align_list;
+    justify-content: space-between;
+}
+
+.bid_time {
+    @include align_list;
+    svg {
+        margin-right: 8px;
+    }
+}
+
+.bid_button {
+    min-width: 129px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    color: var(--clearly-white);
+    border-radius: 16px;
+    background-color: var(--panda-light-blue);
+    box-shadow: var(--panda-first-btn-shadow);
+    @include scale_with_pointer;
+}

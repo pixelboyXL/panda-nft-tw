@@ -1,0 +1,53 @@
+.featured_artist__title_wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+
+.featured_artist__list {
+    display: flex;
+    justify-content: center;
+}
+
+.featured_artist__item {
+    text-align: center;
+    @include scale_with_pointer;
+    &:nth-child(2n) {
+        flex-grow: 1;
+    }
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+    .minor_title_font {
+        margin-bottom: 16px;
+    }
+    .price_font_2 {
+        @include align_list;
+        justify-content: center;
+        svg {
+            margin-right: 8px;
+        }
+    }
+}
+
+.featured_artist__image_wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 120px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 17px;
+    margin-left: auto;
+}
+
+.featured_artist__image {
+    width: 120px;
+    height: 120px;
+}
+
+.featured_artist__check_icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

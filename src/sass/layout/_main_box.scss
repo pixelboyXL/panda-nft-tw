@@ -1,0 +1,50 @@
+.main__box {
+	padding-top: 56px;
+	.container {
+		@include align_list;
+		justify-content: center;
+		margin-bottom: 56px;
+	}
+}
+
+.discover {
+	padding-bottom: 120px;
+}
+
+.main__title {
+	@include font($fs:64px, $fw:700, $lh:80px);
+	margin-right: 24px;
+	max-width: 682px;
+}
+
+.main__after_title_wrap {
+	max-width: 488px;
+}
+
+.main__after_title {
+	margin-bottom: 24px;
+}
+
+.main__button {
+	@include align_list;
+	text-decoration: underline;
+	color: var(--clearly-white);
+	@include change_color_with_pointer;
+}
+
+.main__arrow {
+	margin-left: 8px;
+	fill: currentColor;
+}
+
+.main__list {
+	display: flex;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.main__item {
+	&:not(:last-child) {
+		margin-right: 24px;
+	}
+}
