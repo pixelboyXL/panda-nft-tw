@@ -2,7 +2,7 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/pixelboyXL/panda-nft-tw",
+  "homepage": "https://pixelboyxl.github.io/panda-nft-tw",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /panda-nft-tw/"
