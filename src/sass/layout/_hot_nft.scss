@@ -18,24 +18,6 @@
     }
 }
 
-.hot_nft__button {
-    min-width: 119px;
-    padding: 16px;
-    color: var(--clearly-white);
-    border-radius: 8px;
-    background-color: var(--panda-btn-rgba);
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover {
-        cursor: pointer;
-        background-color: var(--panda-light-blue);
-        box-shadow: var(--panda-second-btn-shadow);
-    }
-    &--active {
-        background-color: var(--panda-light-blue);
-        box-shadow: var(--panda-second-btn-shadow);
-    }
-}
-
 .hot_nft__bid_list {
     flex-wrap: wrap;
     column-gap: 24px;

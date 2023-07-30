@@ -1,14 +1,15 @@
-.main__box {
+.main {
 	padding-top: 56px;
+	padding-bottom: 160px;
+}
+
+.discover {
+	padding-bottom: 120px;
 	.container {
 		@include align_list;
 		justify-content: center;
 		margin-bottom: 56px;
 	}
-}
-
-.discover {
-	padding-bottom: 120px;
 }
 
 .main__title {

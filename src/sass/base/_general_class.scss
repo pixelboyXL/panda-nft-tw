@@ -73,6 +73,24 @@
 	@include scale_with_pointer;
 }
 
+.secondary_button {
+	min-width: 119px;
+	padding: 16px;
+	color: var(--clearly-white);
+	border-radius: 8px;
+	background-color: var(--panda-btn-rgba);
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover {
+		cursor: pointer;
+		background-color: var(--panda-light-blue);
+		box-shadow: var(--panda-second-btn-shadow);
+	}
+	&--active {
+		background-color: var(--panda-light-blue);
+		box-shadow: var(--panda-second-btn-shadow);
+	}
+}
+
 .section {
 	padding-bottom: 160px;
 }
@@ -100,28 +118,31 @@
 	filter: blur(350px);
 }
 
-// .transform_with_scale {
-// 	transition: var(--cubic--bezier);
-// 	&:hover {
-// 		cursor: pointer;
-// 		transform: scale(1.1);
-// 	}
-// }
-
-// .transform_with_small_scale {
-// 	transition: var(--cubic--bezier);
-// 	&:hover {
-// 		cursor: pointer;
-// 		transform: scale(1.05);
-// 	}
-// }
-
-// .transform_color {
-// 	transition: var(--cubic--bezier);
-// 	&:hover {
-// 		color: var(--panda-light-blue);
-// 	}
-// }
+.button_to_top {
+	position: fixed;
+	bottom: 3vh;
+	right: -140px;
+	z-index: 1;
+	width: 50px;
+	height: 50px;
+	@include align_list;
+	justify-content: center;
+	border-radius: 20%;
+	opacity: 0;
+	visibility: hidden;
+	border: 1px solid var(--panda-light-blue);
+	background-color: transparent;
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.1);
+	}
+	&--visible {
+		right: calc(2.5%);
+		opacity: 1;
+		visibility: visible;
+	}
+}
 
 .visually-hidden {
 	position: absolute;
