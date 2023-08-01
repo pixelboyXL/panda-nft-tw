@@ -2,21 +2,6 @@
     position: relative;
 }
 
-.live_actions__title_wrap {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 56px;
-}
-
-.live_actions__list {
-    display: flex;
-    .bid_item {
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
-    }
-}
-
 .live_actions__ornament {
     top: 50%;
     left: -30%;

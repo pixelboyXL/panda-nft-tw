@@ -47,6 +47,12 @@
 	color: var(--panda-grey);
 }
 
+.title_wrap {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 56px;
+}
+
 .current {
 	color: var(--clearly-white);
 	&::after {
@@ -78,7 +84,7 @@
 	padding: 16px;
 	color: var(--clearly-white);
 	border-radius: 8px;
-	background-color: var(--panda-btn-rgba);
+	background-color: var(--panda-first-btn-rgba);
 	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	&:hover {
 		cursor: pointer;

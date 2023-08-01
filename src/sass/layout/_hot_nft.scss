@@ -6,13 +6,13 @@
     }
 }
 
-.hot_nft__list {
+.hot_nft__button_list {
     display: flex;
     justify-content: center;
     margin-bottom: 56px;
 }
 
-.hot_nft__item {
+.hot_nft__button_item {
     &:not(:last-child) {
         margin-right: 24px;
     }
@@ -20,7 +20,6 @@
 
 .hot_nft__bid_list {
     flex-wrap: wrap;
-    column-gap: 24px;
     row-gap: 56px;
 }
 
