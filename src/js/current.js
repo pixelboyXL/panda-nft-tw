@@ -1,23 +1,26 @@
-const homeLink = document.getElementById('home');
-const discoverLink = document.getElementById('discover');
+import { homeLink, discoverLink } from "./refs";
 
 const indexHtml1 = '/';
 const indexHtml2 = '/index.html';
-const indexGitHub1 = '/panda-nft-tw';
+const indexGitHub1 = '/panda-nft-tw/';
 const indexGitHub2 = '/panda-nft-tw/index.html';
-const discoverHtml = '/discover.html';
-const discoverGitHub = '/panda-nft-tw/discover.html';
 
-const { pathname } = location;
+export const currentClass = 'current';
+
+const { pathname } = window.location;
 
 if (pathname === indexHtml1 || pathname === indexHtml2) {
-    homeLink.classList.add('current');
+    currentHomeLink();
 } else if (pathname === indexGitHub1 || pathname === indexGitHub2) {
-    homeLink.classList.add('current');
+    currentHomeLink();
 };
 
-if (pathname === discoverHtml) {
-    discoverLink.classList.add('current');
-} else if (pathname === discoverGitHub) {
-    discoverLink.classList.add('current');
+export function currentHomeLink() {
+    homeLink.classList.add(currentClass);
+    discoverLink.classList.remove(currentClass);
+};
+
+export function currentDiscoverLink() {
+    homeLink.classList.remove(currentClass);
+    discoverLink.classList.add(currentClass);
 };

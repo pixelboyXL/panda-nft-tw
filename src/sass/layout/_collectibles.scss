@@ -1,4 +1,4 @@
-.main_discover {
+.collectibles__box {
     padding-top: 80px;
     padding-bottom: 160px;
 }
@@ -32,7 +32,7 @@
     color: var(--clearly-white);
     background-color: transparent;
     &::placeholder {
-        color: var(--panda-input-color);
+        color: var(--panda-input-grey);
     }
 }
 

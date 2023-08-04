@@ -1,401 +1,399 @@
-<main class="main_discover">
-    <section class="collectibles">
-        <div class="container">
-            <h2 class="title_font">Explore Collectibles</h2>
-            <form class="collectibles__form">
-                <input class="collectibles__input" 
-                    type="text" 
-                    autoComplete="off" 
-                    autoFocus 
-                    placeholder="Type Your Keywords . . ." 
-                    name="text" 
-                />
-                <button type="submit" class="collectibles__form_button">
-                    <svg width="16" height="16">
-                        <use href="./images/icons.svg#icon-search"></use>
+<section class="collectibles">
+    <div class="container">
+        <h2 class="title_font">Explore Collectibles</h2>
+        <form class="collectibles__form">
+            <input class="collectibles__input" 
+                type="text" 
+                autoComplete="off" 
+                autoFocus 
+                placeholder="Type Your Keywords . . ." 
+                name="text" 
+            />
+            <button type="submit" class="collectibles__form_button">
+                <svg width="16" height="16">
+                    <use href="./images/icons.svg#icon-search"></use>
+                </svg>
+            </button>
+        </form>
+        <ul class="collectibles__button_list">
+            <li class="collectibles__button_item">
+                <button type="button" class="price_font_2 secondary_button">Sort By
+                    <svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-arrow"></use>
                     </svg>
                 </button>
-            </form>
-            <ul class="collectibles__button_list">
-                <li class="collectibles__button_item">
-                    <button type="button" class="price_font_2 secondary_button">Sort By
-                        <svg width="24" height="24">
-                            <use href="./images/icons.svg#icon-arrow"></use>
+            </li>
+            <li class="collectibles__button_item">
+                <button type="button" class="price_font_2 secondary_button">🎷 Music</button>
+            </li>
+            <li class="collectibles__button_item">
+                <button type="button" class="price_font_2 secondary_button secondary_button--active">🎨 Art</button>
+            </li>
+            <li class="collectibles__button_item">
+                <button type="button" class="price_font_2 secondary_button">🎳 Sports</button>
+            </li>
+            <li class="collectibles__button_item">
+                <button type="button" class="price_font_2 secondary_button">🤖 Virtual</button>
+            </li>
+            <li class="collectibles__button_item">
+                <button type="button" class="price_font_2 secondary_button">📹 Videos</button>
+            </li>
+            <li class="collectibles__button_item">
+                <button type="button" class="price_font_2 secondary_button">More</button>
+            </li>
+        </ul>
+        <ul class="bid_list collectibles__bid_list">
+            <li class="bid_item">
+                <div class="bid_image_wrap">
+                    <img src="./images/bid_image_4.png" alt="bid_image_4" class="bid_image">
+                    <div class="bid_icon_wrap">
+                        <svg width="24" height="24" class="bid_icon bid_icon--pink">
+                            <use href="./images/icons.svg#icon-heart"></use>
                         </svg>
-                    </button>
-                </li>
-                <li class="collectibles__button_item">
-                    <button type="button" class="price_font_2 secondary_button">🎷 Music</button>
-                </li>
-                <li class="collectibles__button_item">
-                    <button type="button" class="price_font_2 secondary_button secondary_button--active">🎨 Art</button>
-                </li>
-                <li class="collectibles__button_item">
-                    <button type="button" class="price_font_2 secondary_button">🎳 Sports</button>
-                </li>
-                <li class="collectibles__button_item">
-                    <button type="button" class="price_font_2 secondary_button">🤖 Virtual</button>
-                </li>
-                <li class="collectibles__button_item">
-                    <button type="button" class="price_font_2 secondary_button">📹 Videos</button>
-                </li>
-                <li class="collectibles__button_item">
-                    <button type="button" class="price_font_2 secondary_button">More</button>
-                </li>
-            </ul>
-            <ul class="bid_list collectibles__bid_list">
-                <li class="bid_item">
-                    <div class="bid_image_wrap">
-                        <img src="./images/bid_image_4.png" alt="bid_image_4" class="bid_image">
-                        <div class="bid_icon_wrap">
-                            <svg width="24" height="24" class="bid_icon bid_icon--pink">
-                                <use href="./images/icons.svg#icon-heart"></use>
-                            </svg>
-                        </div>
                     </div>
-                    <div class="bid_name_price_wrap">
-                        <div>
-                            <p class="secondary_font bid_name">Dao Vinci #0000</p>
-                            <a href="" class="text_font_2 bid_author">@SalvadorDali</a>
-                        </div>
-                        <div>
-                            <p class="text_font_1 bid_pre_price">Current Bid</p>
-                            <p class="price_font_1 bid_price">4.89 eTH</p>
-                        </div>
+                </div>
+                <div class="bid_name_price_wrap">
+                    <div>
+                        <p class="secondary_font bid_name">Dao Vinci #0000</p>
+                        <a href="" class="text_font_2 bid_author">@SalvadorDali</a>
                     </div>
-                    <div class="bid_time_wrap">
-                        <p class="secondary_font bid_time">
-                            <svg width="24" height="24">
-                                <use href="./images/icons.svg#icon-fire"></use>
-                            </svg>
-                            05 : 12 : 07 : 26
-                        </p>
-                        <button type="button" class="primary_font bid_button">Bid</button>
+                    <div>
+                        <p class="text_font_1 bid_pre_price">Current Bid</p>
+                        <p class="price_font_1 bid_price">4.89 eTH</p>
                     </div>
-                </li>
-                <li class="bid_item">
-                    <div class="bid_image_wrap">
-                        <img src="./images/bid_image_5.png" alt="bid_image_5" class="bid_image">
-                        <div class="bid_icon_wrap">
-                            <svg width="24" height="24" class="bid_icon">
-                                <use href="./images/icons.svg#icon-heart"></use>
-                            </svg>
-                        </div>
+                </div>
+                <div class="bid_time_wrap">
+                    <p class="secondary_font bid_time">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-fire"></use>
+                        </svg>
+                        05 : 12 : 07 : 26
+                    </p>
+                    <button type="button" class="primary_font bid_button">Bid</button>
+                </div>
+            </li>
+            <li class="bid_item">
+                <div class="bid_image_wrap">
+                    <img src="./images/bid_image_5.png" alt="bid_image_5" class="bid_image">
+                    <div class="bid_icon_wrap">
+                        <svg width="24" height="24" class="bid_icon">
+                            <use href="./images/icons.svg#icon-heart"></use>
+                        </svg>
                     </div>
-                    <div class="bid_name_price_wrap">
-                        <div>
-                            <p class="secondary_font bid_name">Fangster 8668</p>
-                            <a href="" class="text_font_2 bid_author">@Kurrebe</a>
-                        </div>
-                        <div>
-                            <p class="text_font_1 bid_pre_price">Current Bid</p>
-                            <p class="price_font_1 bid_price">4.89 eTH</p>
-                        </div>
+                </div>
+                <div class="bid_name_price_wrap">
+                    <div>
+                        <p class="secondary_font bid_name">Fangster 8668</p>
+                        <a href="" class="text_font_2 bid_author">@Kurrebe</a>
                     </div>
-                    <div class="bid_time_wrap">
-                        <p class="secondary_font bid_time">
-                            <svg width="24" height="24">
-                                <use href="./images/icons.svg#icon-fire"></use>
-                            </svg>
-                            05 : 12 : 07 : 26
-                        </p>
-                        <button type="button" class="primary_font bid_button">Bid</button>
+                    <div>
+                        <p class="text_font_1 bid_pre_price">Current Bid</p>
+                        <p class="price_font_1 bid_price">4.89 eTH</p>
                     </div>
-                </li>
-                <li class="bid_item">
-                    <div class="bid_image_wrap">
-                        <img src="./images/bid_image_6.png" alt="bid_image_6" class="bid_image">
-                        <div class="bid_icon_wrap">
-                            <svg width="24" height="24" class="bid_icon">
-                                <use href="./images/icons.svg#icon-heart"></use>
-                            </svg>
-                        </div>
+                </div>
+                <div class="bid_time_wrap">
+                    <p class="secondary_font bid_time">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-fire"></use>
+                        </svg>
+                        05 : 12 : 07 : 26
+                    </p>
+                    <button type="button" class="primary_font bid_button">Bid</button>
+                </div>
+            </li>
+            <li class="bid_item">
+                <div class="bid_image_wrap">
+                    <img src="./images/bid_image_6.png" alt="bid_image_6" class="bid_image">
+                    <div class="bid_icon_wrap">
+                        <svg width="24" height="24" class="bid_icon">
+                            <use href="./images/icons.svg#icon-heart"></use>
+                        </svg>
                     </div>
-                    <div class="bid_name_price_wrap">
-                        <div>
-                            <p class="secondary_font bid_name">Sherbet 3062</p>
-                            <a href="" class="text_font_2 bid_author">@Noche</a>
-                        </div>
-                        <div>
-                            <p class="text_font_1 bid_pre_price">Current Bid</p>
-                            <p class="price_font_1 bid_price">4.89 eTH</p>
-                        </div>
+                </div>
+                <div class="bid_name_price_wrap">
+                    <div>
+                        <p class="secondary_font bid_name">Sherbet 3062</p>
+                        <a href="" class="text_font_2 bid_author">@Noche</a>
                     </div>
-                    <div class="bid_time_wrap">
-                        <p class="secondary_font bid_time">
-                            <svg width="24" height="24">
-                                <use href="./images/icons.svg#icon-fire"></use>
-                            </svg>
-                            05 : 12 : 07 : 26
-                        </p>
-                        <button type="button" class="primary_font bid_button">Bid</button>
+                    <div>
+                        <p class="text_font_1 bid_pre_price">Current Bid</p>
+                        <p class="price_font_1 bid_price">4.89 eTH</p>
                     </div>
-                </li>
-                <li class="bid_item">
-                    <div class="bid_image_wrap">
-                        <img src="./images/bid_image_10.png" alt="bid_image_10" class="bid_image">
-                        <div class="bid_icon_wrap">
-                            <svg width="24" height="24" class="bid_icon">
-                                <use href="./images/icons.svg#icon-heart"></use>
-                            </svg>
-                        </div>
+                </div>
+                <div class="bid_time_wrap">
+                    <p class="secondary_font bid_time">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-fire"></use>
+                        </svg>
+                        05 : 12 : 07 : 26
+                    </p>
+                    <button type="button" class="primary_font bid_button">Bid</button>
+                </div>
+            </li>
+            <li class="bid_item">
+                <div class="bid_image_wrap">
+                    <img src="./images/bid_image_10.png" alt="bid_image_10" class="bid_image">
+                    <div class="bid_icon_wrap">
+                        <svg width="24" height="24" class="bid_icon">
+                            <use href="./images/icons.svg#icon-heart"></use>
+                        </svg>
                     </div>
-                    <div class="bid_name_price_wrap">
-                        <div>
-                            <p class="secondary_font bid_name">Cute Shiba</p>
-                            <a href="" class="text_font_2 bid_author">@Noche</a>
-                        </div>
-                        <div>
-                            <p class="text_font_1 bid_pre_price">Current Bid</p>
-                            <p class="price_font_1 bid_price">4.89 eTH</p>
-                        </div>
+                </div>
+                <div class="bid_name_price_wrap">
+                    <div>
+                        <p class="secondary_font bid_name">Cute Shiba</p>
+                        <a href="" class="text_font_2 bid_author">@Noche</a>
                     </div>
-                    <div class="bid_time_wrap">
-                        <p class="secondary_font bid_time">
-                            <svg width="24" height="24">
-                                <use href="./images/icons.svg#icon-fire"></use>
-                            </svg>
-                            05 : 12 : 07 : 26
-                        </p>
-                        <button type="button" class="primary_font bid_button">Bid</button>
+                    <div>
+                        <p class="text_font_1 bid_pre_price">Current Bid</p>
+                        <p class="price_font_1 bid_price">4.89 eTH</p>
                     </div>
-                </li>
-                <li class="bid_item">
-                    <div class="bid_image_wrap">
-                        <img src="./images/bid_image_11.png" alt="bid_image_11" class="bid_image">
-                        <div class="bid_icon_wrap">
-                            <svg width="24" height="24" class="bid_icon">
-                                <use href="./images/icons.svg#icon-heart"></use>
-                            </svg>
-                        </div>
+                </div>
+                <div class="bid_time_wrap">
+                    <p class="secondary_font bid_time">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-fire"></use>
+                        </svg>
+                        05 : 12 : 07 : 26
+                    </p>
+                    <button type="button" class="primary_font bid_button">Bid</button>
+                </div>
+            </li>
+            <li class="bid_item">
+                <div class="bid_image_wrap">
+                    <img src="./images/bid_image_11.png" alt="bid_image_11" class="bid_image">
+                    <div class="bid_icon_wrap">
+                        <svg width="24" height="24" class="bid_icon">
+                            <use href="./images/icons.svg#icon-heart"></use>
+                        </svg>
                     </div>
-                    <div class="bid_name_price_wrap">
-                        <div>
-                            <p class="secondary_font bid_name">Cute monkey</p>
-                            <a href="" class="text_font_2 bid_author">@Noche</a>
-                        </div>
-                        <div>
-                            <p class="text_font_1 bid_pre_price">Current Bid</p>
-                            <p class="price_font_1 bid_price">4.89 eTH</p>
-                        </div>
+                </div>
+                <div class="bid_name_price_wrap">
+                    <div>
+                        <p class="secondary_font bid_name">Cute monkey</p>
+                        <a href="" class="text_font_2 bid_author">@Noche</a>
                     </div>
-                    <div class="bid_time_wrap">
-                        <p class="secondary_font bid_time">
-                            <svg width="24" height="24">
-                                <use href="./images/icons.svg#icon-fire"></use>
-                            </svg>
-                            05 : 12 : 07 : 26
-                        </p>
-                        <button type="button" class="primary_font bid_button">Bid</button>
+                    <div>
+                        <p class="text_font_1 bid_pre_price">Current Bid</p>
+                        <p class="price_font_1 bid_price">4.89 eTH</p>
                     </div>
-                </li>
-                <li class="bid_item">
-                    <div class="bid_image_wrap">
-                        <img src="./images/bid_image_12.png" alt="bid_image_12" class="bid_image">
-                        <div class="bid_icon_wrap">
-                            <svg width="24" height="24" class="bid_icon">
-                                <use href="./images/icons.svg#icon-heart"></use>
-                            </svg>
-                        </div>
+                </div>
+                <div class="bid_time_wrap">
+                    <p class="secondary_font bid_time">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-fire"></use>
+                        </svg>
+                        05 : 12 : 07 : 26
+                    </p>
+                    <button type="button" class="primary_font bid_button">Bid</button>
+                </div>
+            </li>
+            <li class="bid_item">
+                <div class="bid_image_wrap">
+                    <img src="./images/bid_image_12.png" alt="bid_image_12" class="bid_image">
+                    <div class="bid_icon_wrap">
+                        <svg width="24" height="24" class="bid_icon">
+                            <use href="./images/icons.svg#icon-heart"></use>
+                        </svg>
                     </div>
-                    <div class="bid_name_price_wrap">
-                        <div>
-                            <p class="secondary_font bid_name">Cute monkey</p>
-                            <a href="" class="text_font_2 bid_author">@Noche</a>
-                        </div>
-                        <div>
-                            <p class="text_font_1 bid_pre_price">Current Bid</p>
-                            <p class="price_font_1 bid_price">4.89 eTH</p>
-                        </div>
+                </div>
+                <div class="bid_name_price_wrap">
+                    <div>
+                        <p class="secondary_font bid_name">Cute monkey</p>
+                        <a href="" class="text_font_2 bid_author">@Noche</a>
                     </div>
-                    <div class="bid_time_wrap">
-                        <p class="secondary_font bid_time">
-                            <svg width="24" height="24">
-                                <use href="./images/icons.svg#icon-fire"></use>
-                            </svg>
-                            05 : 12 : 07 : 26
-                        </p>
-                        <button type="button" class="primary_font bid_button">Bid</button>
+                    <div>
+                        <p class="text_font_1 bid_pre_price">Current Bid</p>
+                        <p class="price_font_1 bid_price">4.89 eTH</p>
                     </div>
-                </li>
-                <li class="bid_item">
-                    <div class="bid_image_wrap">
-                        <img src="./images/bid_image_13.png" alt="bid_image_13" class="bid_image">
-                        <div class="bid_icon_wrap">
-                            <svg width="24" height="24" class="bid_icon">
-                                <use href="./images/icons.svg#icon-heart"></use>
-                            </svg>
-                        </div>
+                </div>
+                <div class="bid_time_wrap">
+                    <p class="secondary_font bid_time">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-fire"></use>
+                        </svg>
+                        05 : 12 : 07 : 26
+                    </p>
+                    <button type="button" class="primary_font bid_button">Bid</button>
+                </div>
+            </li>
+            <li class="bid_item">
+                <div class="bid_image_wrap">
+                    <img src="./images/bid_image_13.png" alt="bid_image_13" class="bid_image">
+                    <div class="bid_icon_wrap">
+                        <svg width="24" height="24" class="bid_icon">
+                            <use href="./images/icons.svg#icon-heart"></use>
+                        </svg>
                     </div>
-                    <div class="bid_name_price_wrap">
-                        <div>
-                            <p class="secondary_font bid_name">Dao Vinci #0000</p>
-                            <a href="" class="text_font_2 bid_author">@SalvadorDali</a>
-                        </div>
-                        <div>
-                            <p class="text_font_1 bid_pre_price">Current Bid</p>
-                            <p class="price_font_1 bid_price">4.89 eTH</p>
-                        </div>
+                </div>
+                <div class="bid_name_price_wrap">
+                    <div>
+                        <p class="secondary_font bid_name">Dao Vinci #0000</p>
+                        <a href="" class="text_font_2 bid_author">@SalvadorDali</a>
                     </div>
-                    <div class="bid_time_wrap">
-                        <p class="secondary_font bid_time">
-                            <svg width="24" height="24">
-                                <use href="./images/icons.svg#icon-fire"></use>
-                            </svg>
-                            05 : 12 : 07 : 26
-                        </p>
-                        <button type="button" class="primary_font bid_button">Bid</button>
+                    <div>
+                        <p class="text_font_1 bid_pre_price">Current Bid</p>
+                        <p class="price_font_1 bid_price">4.89 eTH</p>
                     </div>
-                </li>
-                <li class="bid_item">
-                    <div class="bid_image_wrap">
-                        <img src="./images/bid_image_14.png" alt="bid_image_14" class="bid_image">
-                        <div class="bid_icon_wrap">
-                            <svg width="24" height="24" class="bid_icon">
-                                <use href="./images/icons.svg#icon-heart"></use>
-                            </svg>
-                        </div>
+                </div>
+                <div class="bid_time_wrap">
+                    <p class="secondary_font bid_time">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-fire"></use>
+                        </svg>
+                        05 : 12 : 07 : 26
+                    </p>
+                    <button type="button" class="primary_font bid_button">Bid</button>
+                </div>
+            </li>
+            <li class="bid_item">
+                <div class="bid_image_wrap">
+                    <img src="./images/bid_image_14.png" alt="bid_image_14" class="bid_image">
+                    <div class="bid_icon_wrap">
+                        <svg width="24" height="24" class="bid_icon">
+                            <use href="./images/icons.svg#icon-heart"></use>
+                        </svg>
                     </div>
-                    <div class="bid_name_price_wrap">
-                        <div>
-                            <p class="secondary_font bid_name">Fangster 8668</p>
-                            <a href="" class="text_font_2 bid_author">@Kurrebe</a>
-                        </div>
-                        <div>
-                            <p class="text_font_1 bid_pre_price">Current Bid</p>
-                            <p class="price_font_1 bid_price">4.89 eTH</p>
-                        </div>
+                </div>
+                <div class="bid_name_price_wrap">
+                    <div>
+                        <p class="secondary_font bid_name">Fangster 8668</p>
+                        <a href="" class="text_font_2 bid_author">@Kurrebe</a>
                     </div>
-                    <div class="bid_time_wrap">
-                        <p class="secondary_font bid_time">
-                            <svg width="24" height="24">
-                                <use href="./images/icons.svg#icon-fire"></use>
-                            </svg>
-                            05 : 12 : 07 : 26
-                        </p>
-                        <button type="button" class="primary_font bid_button">Bid</button>
+                    <div>
+                        <p class="text_font_1 bid_pre_price">Current Bid</p>
+                        <p class="price_font_1 bid_price">4.89 eTH</p>
                     </div>
-                </li>
-                <li class="bid_item">
-                    <div class="bid_image_wrap">
-                        <img src="./images/bid_image_15.png" alt="bid_image_15" class="bid_image">
-                        <div class="bid_icon_wrap">
-                            <svg width="24" height="24" class="bid_icon">
-                                <use href="./images/icons.svg#icon-heart"></use>
-                            </svg>
-                        </div>
+                </div>
+                <div class="bid_time_wrap">
+                    <p class="secondary_font bid_time">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-fire"></use>
+                        </svg>
+                        05 : 12 : 07 : 26
+                    </p>
+                    <button type="button" class="primary_font bid_button">Bid</button>
+                </div>
+            </li>
+            <li class="bid_item">
+                <div class="bid_image_wrap">
+                    <img src="./images/bid_image_15.png" alt="bid_image_15" class="bid_image">
+                    <div class="bid_icon_wrap">
+                        <svg width="24" height="24" class="bid_icon">
+                            <use href="./images/icons.svg#icon-heart"></use>
+                        </svg>
                     </div>
-                    <div class="bid_name_price_wrap">
-                        <div>
-                            <p class="secondary_font bid_name">Sherbet 3062</p>
-                            <a href="" class="text_font_2 bid_author">@Noche</a>
-                        </div>
-                        <div>
-                            <p class="text_font_1 bid_pre_price">Current Bid</p>
-                            <p class="price_font_1 bid_price">4.89 eTH</p>
-                        </div>
+                </div>
+                <div class="bid_name_price_wrap">
+                    <div>
+                        <p class="secondary_font bid_name">Sherbet 3062</p>
+                        <a href="" class="text_font_2 bid_author">@Noche</a>
                     </div>
-                    <div class="bid_time_wrap">
-                        <p class="secondary_font bid_time">
-                            <svg width="24" height="24">
-                                <use href="./images/icons.svg#icon-fire"></use>
-                            </svg>
-                            05 : 12 : 07 : 26
-                        </p>
-                        <button type="button" class="primary_font bid_button">Bid</button>
+                    <div>
+                        <p class="text_font_1 bid_pre_price">Current Bid</p>
+                        <p class="price_font_1 bid_price">4.89 eTH</p>
                     </div>
-                </li>
-                <li class="bid_item">
-                    <div class="bid_image_wrap">
-                        <img src="./images/bid_image_10.png" alt="bid_image_10" class="bid_image">
-                        <div class="bid_icon_wrap">
-                            <svg width="24" height="24" class="bid_icon">
-                                <use href="./images/icons.svg#icon-heart"></use>
-                            </svg>
-                        </div>
+                </div>
+                <div class="bid_time_wrap">
+                    <p class="secondary_font bid_time">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-fire"></use>
+                        </svg>
+                        05 : 12 : 07 : 26
+                    </p>
+                    <button type="button" class="primary_font bid_button">Bid</button>
+                </div>
+            </li>
+            <li class="bid_item">
+                <div class="bid_image_wrap">
+                    <img src="./images/bid_image_10.png" alt="bid_image_10" class="bid_image">
+                    <div class="bid_icon_wrap">
+                        <svg width="24" height="24" class="bid_icon">
+                            <use href="./images/icons.svg#icon-heart"></use>
+                        </svg>
                     </div>
-                    <div class="bid_name_price_wrap">
-                        <div>
-                            <p class="secondary_font bid_name">Cute Shiba</p>
-                            <a href="" class="text_font_2 bid_author">@Noche</a>
-                        </div>
-                        <div>
-                            <p class="text_font_1 bid_pre_price">Current Bid</p>
-                            <p class="price_font_1 bid_price">4.89 eTH</p>
-                        </div>
+                </div>
+                <div class="bid_name_price_wrap">
+                    <div>
+                        <p class="secondary_font bid_name">Cute Shiba</p>
+                        <a href="" class="text_font_2 bid_author">@Noche</a>
                     </div>
-                    <div class="bid_time_wrap">
-                        <p class="secondary_font bid_time">
-                            <svg width="24" height="24">
-                                <use href="./images/icons.svg#icon-fire"></use>
-                            </svg>
-                            05 : 12 : 07 : 26
-                        </p>
-                        <button type="button" class="primary_font bid_button">Bid</button>
+                    <div>
+                        <p class="text_font_1 bid_pre_price">Current Bid</p>
+                        <p class="price_font_1 bid_price">4.89 eTH</p>
                     </div>
-                </li>
-                <li class="bid_item">
-                    <div class="bid_image_wrap">
-                        <img src="./images/bid_image_11.png" alt="bid_image_11" class="bid_image">
-                        <div class="bid_icon_wrap">
-                            <svg width="24" height="24" class="bid_icon">
-                                <use href="./images/icons.svg#icon-heart"></use>
-                            </svg>
-                        </div>
+                </div>
+                <div class="bid_time_wrap">
+                    <p class="secondary_font bid_time">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-fire"></use>
+                        </svg>
+                        05 : 12 : 07 : 26
+                    </p>
+                    <button type="button" class="primary_font bid_button">Bid</button>
+                </div>
+            </li>
+            <li class="bid_item">
+                <div class="bid_image_wrap">
+                    <img src="./images/bid_image_11.png" alt="bid_image_11" class="bid_image">
+                    <div class="bid_icon_wrap">
+                        <svg width="24" height="24" class="bid_icon">
+                            <use href="./images/icons.svg#icon-heart"></use>
+                        </svg>
                     </div>
-                    <div class="bid_name_price_wrap">
-                        <div>
-                            <p class="secondary_font bid_name">Cute monkey</p>
-                            <a href="" class="text_font_2 bid_author">@Noche</a>
-                        </div>
-                        <div>
-                            <p class="text_font_1 bid_pre_price">Current Bid</p>
-                            <p class="price_font_1 bid_price">4.89 eTH</p>
-                        </div>
+                </div>
+                <div class="bid_name_price_wrap">
+                    <div>
+                        <p class="secondary_font bid_name">Cute monkey</p>
+                        <a href="" class="text_font_2 bid_author">@Noche</a>
                     </div>
-                    <div class="bid_time_wrap">
-                        <p class="secondary_font bid_time">
-                            <svg width="24" height="24">
-                                <use href="./images/icons.svg#icon-fire"></use>
-                            </svg>
-                            05 : 12 : 07 : 26
-                        </p>
-                        <button type="button" class="primary_font bid_button">Bid</button>
+                    <div>
+                        <p class="text_font_1 bid_pre_price">Current Bid</p>
+                        <p class="price_font_1 bid_price">4.89 eTH</p>
                     </div>
-                </li>
-                <li class="bid_item">
-                    <div class="bid_image_wrap">
-                        <img src="./images/bid_image_12.png" alt="bid_image_12" class="bid_image">
-                        <div class="bid_icon_wrap">
-                            <svg width="24" height="24" class="bid_icon">
-                                <use href="./images/icons.svg#icon-heart"></use>
-                            </svg>
-                        </div>
+                </div>
+                <div class="bid_time_wrap">
+                    <p class="secondary_font bid_time">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-fire"></use>
+                        </svg>
+                        05 : 12 : 07 : 26
+                    </p>
+                    <button type="button" class="primary_font bid_button">Bid</button>
+                </div>
+            </li>
+            <li class="bid_item">
+                <div class="bid_image_wrap">
+                    <img src="./images/bid_image_12.png" alt="bid_image_12" class="bid_image">
+                    <div class="bid_icon_wrap">
+                        <svg width="24" height="24" class="bid_icon">
+                            <use href="./images/icons.svg#icon-heart"></use>
+                        </svg>
                     </div>
-                    <div class="bid_name_price_wrap">
-                        <div>
-                            <p class="secondary_font bid_name">Cute monkey</p>
-                            <a href="" class="text_font_2 bid_author">@Noche</a>
-                        </div>
-                        <div>
-                            <p class="text_font_1 bid_pre_price">Current Bid</p>
-                            <p class="price_font_1 bid_price">4.89 eTH</p>
-                        </div>
+                </div>
+                <div class="bid_name_price_wrap">
+                    <div>
+                        <p class="secondary_font bid_name">Cute monkey</p>
+                        <a href="" class="text_font_2 bid_author">@Noche</a>
                     </div>
-                    <div class="bid_time_wrap">
-                        <p class="secondary_font bid_time">
-                            <svg width="24" height="24">
-                                <use href="./images/icons.svg#icon-fire"></use>
-                            </svg>
-                            05 : 12 : 07 : 26
-                        </p>
-                        <button type="button" class="primary_font bid_button">Bid</button>
+                    <div>
+                        <p class="text_font_1 bid_pre_price">Current Bid</p>
+                        <p class="price_font_1 bid_price">4.89 eTH</p>
                     </div>
-                </li>
-            </ul>
-            <button type="button" class="primary_button secondary_font collectibles__more_button">
-                View More
-            </button>
-        </div>
-    </section>
-</main>
+                </div>
+                <div class="bid_time_wrap">
+                    <p class="secondary_font bid_time">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-fire"></use>
+                        </svg>
+                        05 : 12 : 07 : 26
+                    </p>
+                    <button type="button" class="primary_font bid_button">Bid</button>
+                </div>
+            </li>
+        </ul>
+        <button type="button" class="primary_button secondary_font collectibles__more_button">
+            View More
+        </button>
+    </div>
+</section>

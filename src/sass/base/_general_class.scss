@@ -10,11 +10,11 @@
 }
 
 .primary_font {
-	@include font($fw: 700);
+	@include font();
 }
 
 .secondary_font {
-	@include font();
+	@include font($fw: 600);
 }
 
 .text_font_1 {
@@ -39,6 +39,16 @@
 
 .price_font_2 {
 	@include font($fw: 500, $lh: 24px);
+}
+
+.product_small_font_1 {
+	@include font($fs: 12px, $fw: 400, $lh: 24px);
+	color: var(--panda-product-grey);
+}
+
+.product_small_font_2 {
+	@include font($fs: 12px, $fw: 600, $lh: 24px);
+	color: var(--panda-input-grey);
 }
 
 .primary_font,
@@ -150,7 +160,7 @@
 	}
 }
 
-.visually-hidden {
+.visually_hidden {
 	position: absolute;
 	width: 1px;
 	height: 1px;

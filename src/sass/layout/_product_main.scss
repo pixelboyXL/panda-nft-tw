@@ -25,7 +25,7 @@
     padding-bottom: 16px;
     padding-left: 24px;
     border-radius: 16px;
-    background-color: var(--pand-medium-blue);
+    background-color: var(--pand-first-medium-blue);
 }
 
 .product__time {
@@ -71,7 +71,7 @@
     padding-left: 24px;
     margin-bottom: 56px;
     border-radius: 16px;
-    background-color: var(--panda-light-grey);
+    background-color: var(--panda-second-medium-blue);
 }
 
 .product__main_artist_item {
@@ -86,12 +86,22 @@
 
 .product__main_button {
     min-width: 275px;
-    padding: 16px;
-    border-radius: 8px;
     background-color: var(--panda-light-blue);
-    @include scale_with_pointer;
     &--active {
         border: 1.5px solid var(--panda-light-blue);
         background: var(--panda-second-btn-rgba);
     }
+}
+
+.product__more_button {
+    min-width: 176px;
+    border: 2px solid var(--panda-light-blue);
+    text-align: center;
+}
+
+.product__main_button,
+.product__more_button {
+    padding: 16px;
+    border-radius: 8px;
+    @include scale_with_pointer;
 }

@@ -1,9 +1,9 @@
-const toTopBtn = document.querySelector('.button_to_top');
+import { toTopBtn } from "./refs";
 
 window.addEventListener('scroll', onScroll);
 
 if (toTopBtn) {
-    toTopBtn.addEventListener('click', onToTopBtn);
+    toTopBtn.addEventListener('click', scrollToTop);
 };
 
 function onScroll() {
@@ -17,7 +17,7 @@ function onScroll() {
     };
 };
 
-function onToTopBtn() {
+export function scrollToTop() {
     if (window.pageYOffset > 0) {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };

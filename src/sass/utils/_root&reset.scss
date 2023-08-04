@@ -1,11 +1,11 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 :root {
-	--panda-blue: #02050E;
+	--panda-dark-blue: #02050E;
 	--panda-light-blue: #1E50FF;
-	--pand-medium-blue: #0F182E;
+	--pand-first-medium-blue: #0F182E;
+	--panda-second-medium-blue: #272D37;
 	--panda-grey: #ADB9C7;
-	--panda-light-grey: #272D37;
 	--panda-ornament: rgba(30, 80, 255, 0.50);
 	--panda-heart-grey: #E7ECF2;
 	--panda-heart-pink: #FF4D6D;
@@ -15,7 +15,8 @@
 	--panda-second-btn-shadow: 10px 10px 42px 0px rgba(30, 80, 255, 0.50);
 	--panda-form-background-color: rgba(255, 255, 255, 0.10);
 	--panda-form-border-color: #EEF2F6;
-	--panda-input-color: #8F9CA9;
+	--panda-input-grey: #8F9CA9;
+	--panda-product-grey: #B8C1CC;
 	--clearly-white: #FFFFFF;
 }
 
@@ -60,7 +61,7 @@ a {
 body {
 	font-family: 'Poppins', sans-serif;
 	color: var(--clearly-white);
-	background-color: var(--panda-blue);
+	background-color: var(--panda-dark-blue);
 	&::-webkit-scrollbar {
 		width: 10px;
 	}

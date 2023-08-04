@@ -36,8 +36,8 @@
 	&:not(:last-child) {
 		margin-bottom: 16px;
 	}
-	a {
-		@include change_color;
+	p {
+		@include change_color_with_pointer;
 	}
 }
 
