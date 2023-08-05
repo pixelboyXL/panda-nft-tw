@@ -1,11 +1,11 @@
 import { productButtonList, productDescriptionButton, productDescription, productOffersButton, productOffers, productPriceHistoryButton, productPriceHistory } from "./refs";
-import { visuallyHiddenClass } from "./toogleHomePageBox";
 
 if (productButtonList) {
     productButtonList.addEventListener('click', changeProductInfo);
 };
 
 const activeClass = 'product__minor_button--active';
+const visuallyHiddenClass = 'visually_hidden';
 
 function changeProductInfo(event) {
     const { target } = event;

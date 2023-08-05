@@ -15,6 +15,7 @@ const refs = {
   productPriceHistoryButton: document.getElementById('price_history'),
   productPriceHistory: document.querySelector('.product__minor_price_history_wrap'),
   toTopBtn: document.querySelector('.button_to_top'),
+  isUnderDevelopmentLink: document.querySelectorAll('[data-development]'),
 };
 
 export const {
@@ -34,4 +35,5 @@ export const {
   productPriceHistoryButton,
   productPriceHistory,
   toTopBtn,
+  isUnderDevelopmentLink,
 } = refs;

@@ -1,8 +1,9 @@
 import { homeLink, discoverLink, mainBox, collectiblesBox, productBox, productMoreButton } from "./refs";
 import { currentHomeLink, currentDiscoverLink } from "./current";
 import { scrollToTop } from "./scroll";
+import { ifSuccess } from "./notiflix";
 
-export const visuallyHiddenClass = 'visually_hidden';
+const isHiddenClass = 'is_hidden';
 
 homeLink.addEventListener('click', goToMain);
 discoverLink.addEventListener('click', goToDiscover);
@@ -28,6 +29,11 @@ function goToDiscover() {
 };
 
 export function goToProduct() {
+    if (!productBox.classList.contains(isHiddenClass)) {
+        scrollToTop();
+        ifSuccess();
+        return;
+    };
     currentHomeLink();
     hideMainBox();
     hideCollectiblesBox();
@@ -36,25 +42,25 @@ export function goToProduct() {
 };
 
 function showMainBox() {
-    mainBox.classList.remove(visuallyHiddenClass);
+    mainBox.classList.remove(isHiddenClass);
 };
 
 function hideMainBox() {
-    mainBox.classList.add(visuallyHiddenClass);
+    mainBox.classList.add(isHiddenClass);
 };
 
 function showCollectiblesBox() {
-    collectiblesBox.classList.remove(visuallyHiddenClass);
+    collectiblesBox.classList.remove(isHiddenClass);
 };
 
 function hideCollectiblesBox() {
-    collectiblesBox.classList.add(visuallyHiddenClass);
+    collectiblesBox.classList.add(isHiddenClass);
 };
 
 function showProductBox() {
-    productBox.classList.remove(visuallyHiddenClass);
+    productBox.classList.remove(isHiddenClass);
 };
 
 function hideProductBox() {
-    productBox.classList.add(visuallyHiddenClass);
+    productBox.classList.add(isHiddenClass);
 };
