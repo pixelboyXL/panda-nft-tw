@@ -5,3 +5,4 @@ import "./js/scroll";
 import "./js/bid";
 import "./js/product";
 import "./js/notiflix";
+import "./js/splide";
