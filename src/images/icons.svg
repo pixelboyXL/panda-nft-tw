@@ -111,5 +111,11 @@
             <path fill="#52b788" style="fill: var(--color1, #52b788)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
             <path fill="#fff" style="fill: var(--color2, #fff)" d="M13.884 22.575c-0.173 0.174-0.408 0.27-0.653 0.27s-0.48-0.097-0.653-0.27l-5.212-5.213c-0.541-0.541-0.541-1.418 0-1.958l0.653-0.653c0.541-0.541 1.417-0.541 1.958 0l3.254 3.254 8.792-8.792c0.541-0.541 1.418-0.541 1.958 0l0.653 0.653c0.541 0.541 0.541 1.418 0 1.958l-10.75 10.751z"></path>
         </symbol>
+        <symbol id="icon-arrow-left" viewBox="0 0 32 32">
+            <path fill="none" stroke="currentColor" style="stroke: var(--color1, currentColor)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M20 26.56l-8.693-8.693c-1.027-1.027-1.027-2.707 0-3.733l8.693-8.693"></path>
+        </symbol>
+        <symbol id="icon-arrow-right" viewBox="0 0 32 32">
+            <path fill="none" stroke="currentColor" style="stroke: var(--color1, currentColor)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M12 26.56l8.693-8.693c1.027-1.027 1.027-2.707 0-3.733l-8.693-8.693"></path>
+        </symbol>
     </defs>
 </svg>
