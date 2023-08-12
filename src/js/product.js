@@ -5,7 +5,7 @@ if (productButtonList) {
 };
 
 const activeClass = 'product__minor_button--active';
-const visuallyHiddenClass = 'visually_hidden';
+export const visuallyHiddenClass = 'visually_hidden';
 
 function changeProductInfo(event) {
     const { target } = event;

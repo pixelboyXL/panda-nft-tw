@@ -16,6 +16,9 @@ const refs = {
   productPriceHistory: document.querySelector('.product__minor_price_history_wrap'),
   toTopBtn: document.querySelector('.button_to_top'),
   isUnderDevelopmentLink: document.querySelectorAll('[data-development]'),
+  paginationPrevButton: document.querySelector('.pagination__prev_button'),
+  paginationLinks: document.querySelectorAll('.pagination__item'),
+  paginationNextButton: document.querySelector('.pagination__next_button'),
 };
 
 export const {
@@ -36,4 +39,7 @@ export const {
   productPriceHistory,
   toTopBtn,
   isUnderDevelopmentLink,
+  paginationPrevButton,
+  paginationLinks,
+  paginationNextButton,
 } = refs;
