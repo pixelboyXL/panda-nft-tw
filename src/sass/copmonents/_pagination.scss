@@ -1,12 +1,7 @@
-.pagination {
+.pagination__wrap {
+    @include align_list_justify_center;
     max-width: 371px;
     margin: 0 auto;
-}
-
-.pagination__wrap {
-    @include align_list;
-    justify-content: center;
-    margin-bottom: 24px;
 }
 
 .pagination__prev_button,
@@ -46,22 +41,20 @@
     @include align_list;
     margin-left: 20px;
     margin-right: 20px;
-    column-gap: 20px;
+    column-gap: 10px;
 }
 
 .pagination__item {
-    @include align_list;
-    justify-content: center;
+    @include align_list_justify_center;
+    width: 32px;
+    height: 32px;
+    padding-top: 4px;
+    padding-right: 12px;
+    padding-bottom: 4px;
+    padding-left: 12px;
     color: var(--clearly-white);
-    padding: 1px;
     cursor: pointer;
     &--active {
-        width: 32px;
-        height: 32px;
-        padding-top: 4px;
-        padding-right: 12px;
-        padding-bottom: 4px;
-        padding-left: 12px;
         border-radius: 16px;
         background-color: var(--panda-light-blue);
         filter: drop-shadow(var(--panda-third-btn-shadow));

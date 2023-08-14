@@ -17,11 +17,13 @@ function notiflixTheme() {
 
 notiflixTheme();
 
-isUnderDevelopmentLink.forEach(function (link) {
-    link.addEventListener('click', () => {
-        isUnderDevelopment();
+if (isUnderDevelopmentLink) {
+    isUnderDevelopmentLink.forEach(function (link) {
+        link.addEventListener('click', () => {
+            isUnderDevelopment();
+        });
     });
-});
+};
 
 const infoText = 'Oops... sorry, this functionality is under development🙈';
 

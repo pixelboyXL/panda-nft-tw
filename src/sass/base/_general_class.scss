@@ -1,8 +1,8 @@
 .container {
 	// width: 100%;
-	width: 1440px;
-	padding-right: 120px;
-	padding-left: 120px;
+	max-width: 1240px;
+	padding-right: 20px;
+	padding-left: 20px;
 	margin: 0 auto;
 	// @include desk {
 	// 	width: 1440px;
@@ -137,12 +137,11 @@
 .button_to_top {
 	position: fixed;
 	bottom: 3vh;
-	right: -140px;
+	right: calc(-10%);
 	z-index: 1;
 	width: 50px;
 	height: 50px;
-	@include align_list;
-	justify-content: center;
+	@include align_list_justify_center;
 	border-radius: 20%;
 	opacity: 0;
 	visibility: hidden;

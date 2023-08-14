@@ -1,6 +1,5 @@
 .hot_nft {
     position: relative;
-    margin-bottom: 56px;
     h2 {
         text-align: center;
         margin-bottom: 56px;
@@ -8,8 +7,7 @@
 }
 
 .hot_nft__button_list {
-    display: flex;
-    justify-content: center;
+    @include align_list_justify_center;
     margin-bottom: 56px;
 }
 
@@ -22,6 +20,7 @@
 .hot_nft__bid_list {
     flex-wrap: wrap;
     row-gap: 56px;
+    margin-bottom: 56px;
 }
 
 .hot_nft__bid_item {

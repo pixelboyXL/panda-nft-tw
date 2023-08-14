@@ -26,7 +26,6 @@
         background-color: transparent;
         border: 1px solid var(--clearly-white);
     }
-    @include scale_with_pointer;
 }
 
 .create_sell__icon_wrap {

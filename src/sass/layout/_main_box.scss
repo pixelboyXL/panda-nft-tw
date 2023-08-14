@@ -6,8 +6,7 @@
 .discover {
 	padding-bottom: 120px;
 	.container {
-		@include align_list;
-		justify-content: center;
+		@include align_list_justify_center;
 		margin-bottom: 56px;
 	}
 }

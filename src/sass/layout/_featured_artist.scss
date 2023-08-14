@@ -1,6 +1,5 @@
 .featured_artist__list {
-    display: flex;
-    justify-content: center;
+    @include align_list_justify_center;
 }
 
 .featured_artist__item {
@@ -16,8 +15,7 @@
         margin-bottom: 16px;
     }
     .price_font_2 {
-        @include align_list;
-        justify-content: center;
+        @include align_list_justify_center;
         svg {
             margin-right: 8px;
         }
@@ -26,8 +24,7 @@
 
 .featured_artist__image_wrap {
     position: relative;
-    display: flex;
-    justify-content: center;
+    @include align_list_justify_center;
     max-width: 120px;
     margin-top: 0;
     margin-right: auto;
@@ -35,8 +32,22 @@
     margin-left: auto;
 }
 
+.featured_artist__image {
+    max-width: 120px;
+    width: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
 .featured_artist__check_icon {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+.featured_artist__name {
+    max-width: 200px;
+    max-height: 36px;
+    overflow: hidden;
 }

@@ -10,6 +10,12 @@
     align-items: center;
 }
 
+@mixin align_list_justify_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin desk {
     @media screen and (min-width: 1440px) {
         @content;
@@ -32,14 +38,14 @@
 }
 
 @mixin scale {
-    transition: transform 500ms ease-in-out;
+    transition: transform 250ms ease-in-out;
     &:hover {
         transform: scale(1.1);
     }
 }
 
 @mixin scale_with_pointer {
-    transition: transform 500ms ease-in-out;
+    transition: transform 250ms ease-in-out;
     &:hover {
         cursor: pointer;
         transform: scale(1.1);
@@ -47,7 +53,7 @@
 }
 
 @mixin small_scale_with_pointer {
-    transition: transform 500ms ease-in-out;
+    transition: transform 250ms ease-in-out;
     &:hover {
         cursor: pointer;
         transform: scale(1.05);

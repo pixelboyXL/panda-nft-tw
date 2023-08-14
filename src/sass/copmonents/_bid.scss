@@ -46,21 +46,34 @@
     margin-bottom: 24px;
 }
 
+.bid_name {
+    max-width: 150px;
+    max-height: 26px;
+    overflow: hidden;
+}
+
 .bid_name,
 .bid_pre_price {
     margin-bottom: 8px;
 }
 
-.bid_author {
+.bid_author_wrap {
     @include align_list;
+}
+
+.bid_avatar {
+    max-width: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    margin-right: 8px;
+}
+
+.bid_author {
+    max-width: 105px;
+    overflow: hidden;
     color: var(--clearly-white);
-    &::before {
-        content: "";
-        width: 40px;
-        height: 40px;
-        margin-right: 8px;
-        background-image: url(../images/artist_mini.png);
-    }
 }
 
 .bid_price {
