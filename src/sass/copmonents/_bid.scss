@@ -15,6 +15,7 @@
 }
 
 .bid_image {
+    @include dynamic_image($mw: 336px, $w:336px, $mh: 352px, $br: 16px);
     margin-bottom: 24px;
 }
 
@@ -47,9 +48,7 @@
 }
 
 .bid_name {
-    max-width: 150px;
-    max-height: 26px;
-    overflow: hidden;
+    @include dynamic_name($mw: 150px, $mh: 26px);
 }
 
 .bid_name,
@@ -62,17 +61,12 @@
 }
 
 .bid_avatar {
-    max-width: 40px;
-    width: 40px;
-    border-radius: 50%;
-    overflow: hidden;
-    object-fit: cover;
+    @include dynamic_image($mw: 40px, $w:40px, $mh: 40px, $br: 50%);
     margin-right: 8px;
 }
 
 .bid_author {
-    max-width: 105px;
-    overflow: hidden;
+    @include dynamic_name($mw: 105px, $mh: 24px);
     color: var(--clearly-white);
 }
 

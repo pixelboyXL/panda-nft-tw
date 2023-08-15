@@ -66,6 +66,10 @@
     margin-right: 21px;
 }
 
+.product__minor_image {
+    @include dynamic_image($mw: 56px, $w:56px, $mh: 56px, $br: 8px);
+}
+
 .product__minor_check_icon {
     position: absolute;
     right: 0;
@@ -75,9 +79,11 @@
 
 .product__minor_name_wrap {
     margin-right: auto;
-    .price_font_1 {
-        @include align_list;
-    }
+}
+
+.product__minor_name {
+    @include align_list;
+    @include dynamic_name($mw: 230px, $mh: 24px);
 }
 
 .product_small_font_1 {

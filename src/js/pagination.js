@@ -5,19 +5,21 @@ const activeClass = 'pagination__item--active';
 
 const amountOfPages = 24;
 let page = '';
+const dots = '...';
 
 setPageDynamic();
-
-const linksIndexArray1 = [0, 1];
-const linksIndexArray2 = [7, 8];
 
 if (paginationPrevButton) {
     paginationPrevButton.addEventListener('click', onPaginationPrevButton);
 };
 
 if (paginationLinks) {
-    paginationLinks.forEach(function (link) {
+    paginationLinks.forEach(function (link, index) {
         link.addEventListener('click', () => {
+            const { textContent } = link;
+            if (textContent === dots) {
+                return;
+            };
             onPaginationLink(link);
         });
     });
@@ -74,19 +76,14 @@ function onPaginationNextButton() {
 };
 
 function doPagination() {
+    removePrevActive();
     if (page < 5) {
-        removePrevActive();
-        hideLinks(linksIndexArray1);
         setActiveLinkMath(page);
         linksTextContentStatic();
-        showLinks(linksIndexArray2);
     };
     if (page >= 5) {
         if (page <= amountOfPages - 4) {
-            removePrevActive();
-            showLinks(linksIndexArray1);
             linksTextContentMathPage();
-            showLinks(linksIndexArray2);
         };
         if (page === amountOfPages - 3) {
             linksTextContentMathAmountPages();
@@ -113,8 +110,13 @@ function setPageStatic(linkObject) {
 };
 
 function setPageDynamic() {
-    const activeLink = document.querySelector('.pagination__item--active');
-    page = Number(activeLink.textContent);
+    const { textContent } = document.querySelector('.pagination__item--active');
+    page = Number(textContent);
+    if (page === 1) {
+        hidePrevButton();
+    } else {
+        doPagination();
+    };
 };
 
 function showPrevButton() {
@@ -143,52 +145,38 @@ function removePrevActive() {
 };
 
 function setActiveLinkMath(page) {
-    paginationLinks[page + 1].classList.add(activeClass);
+    paginationLinks[page - 1].classList.add(activeClass);
 };
 
 function setActiveLinkStatic(linkIndex) {
     paginationLinks[linkIndex].classList.add(activeClass);
 };
 
-function hideLinks(linksArray) {
-    linksArray.forEach(function (linkNumber) {
-        paginationLinks[linkNumber].classList.add(visuallyHiddenClass);
-    });
-};
-
-function showLinks(linksArray) {
-    linksArray.forEach(function (linkNumber) {
-        paginationLinks[linkNumber].classList.remove(visuallyHiddenClass);
-    });
-};
-
 function linksTextContentStatic() {
-    paginationLinks[2].textContent = 1;
-    paginationLinks[3].textContent = 2;
-    paginationLinks[4].textContent = 3;
-    paginationLinks[5].textContent = 4;
-    paginationLinks[6].textContent = 5;
-    paginationLinks[8].textContent = amountOfPages;
+    paginationLinks[0].textContent = 1;
+    paginationLinks[1].textContent = 2;
+    paginationLinks[2].textContent = 3;
+    paginationLinks[3].textContent = 4;
+    paginationLinks[4].textContent = 5;
+    paginationLinks[5].textContent = dots;
+    paginationLinks[6].textContent = amountOfPages;
 };
 
 function linksTextContentMathPage() {
-    paginationLinks[2].textContent = page - 2;
-    paginationLinks[3].textContent = page - 1;
-    paginationLinks[4].classList.add(activeClass);
-    paginationLinks[4].textContent = page;
-    paginationLinks[5].textContent = page + 1;
-    paginationLinks[6].textContent = page + 2;
-    paginationLinks[8].textContent = amountOfPages;
+    paginationLinks[1].textContent = dots;
+    paginationLinks[2].textContent = page - 1;
+    paginationLinks[3].classList.add(activeClass);
+    paginationLinks[3].textContent = page;
+    paginationLinks[4].textContent = page + 1;
+    paginationLinks[5].textContent = dots;
+    paginationLinks[6].textContent = amountOfPages;
 };
 
 function linksTextContentMathAmountPages() {
-    removePrevActive();
-    showLinks(linksIndexArray1);
+    paginationLinks[1].textContent = dots;
     paginationLinks[2].textContent = amountOfPages - 4;
     paginationLinks[3].textContent = amountOfPages - 3;
     paginationLinks[4].textContent = amountOfPages - 2;
     paginationLinks[5].textContent = amountOfPages - 1;
     paginationLinks[6].textContent = amountOfPages;
-    hideLinks(linksIndexArray2);
-    paginationLinks[8].textContent = amountOfPages;
 };

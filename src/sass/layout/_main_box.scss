@@ -56,3 +56,7 @@
 .splide__slide:hover {
 	cursor: pointer;
 }
+
+.splide__image {
+	@include dynamic_image($mw: 498px, $w:498px, $mh: 352px, $br: 16px);
+}

@@ -16,6 +16,21 @@
     align-items: center;
 }
 
+@mixin dynamic_image($mw, $w, $mh, $br, $of:cover, $o:hidden) {
+    max-width: $mw;
+    width: $w;
+    min-height: $mh;
+    border-radius: $br;
+    object-fit: $of;
+    overflow: $o;
+}
+
+@mixin dynamic_name($mw, $mh, $o:hidden) {
+    max-width: $mw;
+    max-height: $mh;
+    overflow: $o;
+}
+
 @mixin desk {
     @media screen and (min-width: 1440px) {
         @content;
