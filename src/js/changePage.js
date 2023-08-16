@@ -1,5 +1,5 @@
 import { homeLink, discoverLink, productMoreButton } from "./refs";
-import { indexHtml2, discoverHtml, productHtml, productGitHub, currentHomeLink, currentDiscoverLink } from "./current";
+import { indexHtml2, discoverHtml, productHtml, indexGitHub1, indexGitHub2, discoverGitHub, productGitHub, currentHomeLink, currentDiscoverLink } from "./current";
 import { scrollToTop } from "./scroll";
 import { ifSuccess } from "./notiflix";
 
@@ -12,20 +12,33 @@ if (productMoreButton) {
 
 function goToMain() {
     currentHomeLink();
-    location.pathname = indexHtml2;
+    if (!location.pathname.includes(indexGitHub1)) {
+        location.pathname = indexHtml2;
+    } else {
+        location.pathname = indexGitHub2;
+    };
 };
 
 function goToDiscover() {
     currentDiscoverLink();
-    location.pathname = discoverHtml;
+    if (!location.pathname.includes(indexGitHub1)) {
+        location.pathname = discoverHtml;
+    } else {
+        location.pathname = discoverGitHub;
+    };
 };
 
 export function goToProduct() {
+    console.log('hey');
     if (location.pathname === productHtml || location.pathname === productGitHub) {
         scrollToTop();
         ifSuccess();
         return;
     };
     currentHomeLink();
-    location.pathname = productHtml;
+    if (!location.pathname.includes(indexGitHub1)) {
+        location.pathname = productHtml;
+    } else {
+        location.pathname = productGitHub;
+    };
 };

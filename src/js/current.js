@@ -6,16 +6,14 @@ export const indexHtml2 = '/index.html';
 export const discoverHtml = '/discover.html';
 export const productHtml = '/product.html';
 
-const indexGitHub1 = '/panda-nft-tw/';
-const indexGitHub2 = '/panda-nft-tw/index.html';
-const discoverGitHub = '/panda-nft-tw/discover.html';
+export const indexGitHub1 = '/panda-nft-tw/';
+export const indexGitHub2 = '/panda-nft-tw/index.html';
+export const discoverGitHub = '/panda-nft-tw/discover.html';
 export const productGitHub = '/panda-nft-tw/product.html';
 
 export const currentClass = 'current';
 
-const { pathname } = window.location;
-
-switch (pathname) {
+switch (location.pathname) {
     case indexHtml1:
         currentHomeLink();
         break;
