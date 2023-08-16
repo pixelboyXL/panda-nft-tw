@@ -1,5 +1,5 @@
 import { bidHeart, bidButton } from "./refs";
-import { goToProduct } from "./toogleHomePageBox";
+import { goToProduct } from "./changePage";
 
 const activeClass = 'bid_icon--pink';
 

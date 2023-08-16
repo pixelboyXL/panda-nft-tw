@@ -5,12 +5,11 @@ if (productButtonList) {
 };
 
 const activeClass = 'product__minor_button--active';
-export const visuallyHiddenClass = 'visually_hidden';
+const visuallyHiddenClass = 'visually_hidden';
 
 function changeProductInfo(event) {
     const { target } = event;
     const targetAlreadyActive = target.classList.contains(activeClass);
-
     if (target === productDescriptionButton) {
         if (targetAlreadyActive) {
             return;

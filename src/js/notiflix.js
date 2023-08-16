@@ -36,3 +36,9 @@ const successText = 'Yeap, you already in product page example👌';
 export function ifSuccess() {
     Notiflix.Notify.success(successText);
 };
+
+const wrongAdressText = 'Omg... looks like this isn`t your Way👀';
+
+export function wrongAdress() {
+    Notiflix.Notify.info(wrongAdressText);
+};

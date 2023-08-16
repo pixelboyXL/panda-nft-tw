@@ -1,6 +1,6 @@
 import "./js/refs";
 import "./js/current";
-import "./js/toogleHomePageBox";
+import "./js/changePage";
 import "./js/scroll";
 import "./js/bid";
 import "./js/pagination";

@@ -1,5 +1,4 @@
 import { paginationPrevButton, paginationLinks, paginationNextButton } from "./refs";
-import { visuallyHiddenClass } from "./product";
 
 const activeClass = 'pagination__item--active';
 
@@ -110,13 +109,17 @@ function setPageStatic(linkObject) {
 };
 
 function setPageDynamic() {
-    const { textContent } = document.querySelector('.pagination__item--active');
-    page = Number(textContent);
-    if (page === 1) {
-        hidePrevButton();
-    } else {
-        doPagination();
+    const activePage = document.querySelector('.pagination__item--active');
+    if (activePage) {
+        const { textContent } = activePage;
+        page = Number(textContent);
+        if (page === 1) {
+            hidePrevButton();
+        } else {
+            doPagination();
+        };
     };
+    return;
 };
 
 function showPrevButton() {
