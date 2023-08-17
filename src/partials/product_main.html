@@ -1,7 +1,11 @@
 <section class="product__main">
     <div class="container">
         <div class="product__image_wrap">
-            <img src="./images/product_bird.png" alt="product_bird" class="product__image">
+            <img
+                srcset="./images/product_bird.png 1x, ./images/product_bird@2.png 2x"
+                src="./images/product_bird.png"
+                alt="product_bird"
+                class="product__image">
             <div class="product__time_wrap">
                 <p class="product__time minor_title_font">
                     <svg width="24" height="24">
@@ -26,14 +30,22 @@
             </ul>
             <ul class="product__main_artist_list">
                 <li class="product__main_artist_item">
-                    <img src="./images/product_artist_1.png" alt="product_artist_1" class="product__main_artist_image">
+                    <img
+                        srcset="./images/product_artist_1.png 1x, ./images/product_artist_1@2.png 2x"
+                        src="./images/product_artist_1.png"
+                        alt="product_artist_1"
+                        class="product__main_artist_image">
                     <div>
                         <p class="text_font_1">Creator</p>
                         <p class="price_font_2 product__main_artist_name">SalvadorDali</p>
                     </div>
                 </li>
                 <li class="product__main_artist_item">
-                    <img src="./images/product_artist_2.png" alt="product_artist_2" class="product__main_artist_image">
+                    <img
+                        srcset="./images/product_artist_13.png 1x, ./images/product_artist_13@2.png 2x"
+                        src="./images/product_artist_13.png"
+                        alt="product_artist_13"
+                        class="product__main_artist_image">
                     <div>
                         <p class="text_font_1">Owner</p>
                         <p class="price_font_2 product__main_artist_name">SalvadorDali</p>
@@ -42,10 +54,10 @@
             </ul>
             <ul class="product__main_button_list">
                 <li>
-                    <button type="button" class="secondary_font product__main_button product__main_button--active" data-development>Purchase Now</button>
+                    <a href="" class="button secondary_font product__main_button product__main_button--active" data-development>Purchase Now</a>
                 </li>
                 <li>
-                    <button type="button" class="secondary_font product__main_button" data-development>Place A Bid</button>
+                    <a href="" class="button secondary_font product__main_button" data-development>Place A Bid</a>
                 </li>
             </ul>
         </div>

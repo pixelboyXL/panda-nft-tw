@@ -19,15 +19,14 @@ notiflixTheme();
 
 if (isUnderDevelopmentLink) {
     isUnderDevelopmentLink.forEach(function (link) {
-        link.addEventListener('click', () => {
-            isUnderDevelopment();
-        });
+        link.addEventListener('click', isUnderDevelopment);
     });
 };
 
 const infoText = 'Oops... sorry, this functionality is under development🙈';
 
-export function isUnderDevelopment() {
+export function isUnderDevelopment(event) {
+    event.preventDefault();
     Notiflix.Notify.info(infoText);
 };
 

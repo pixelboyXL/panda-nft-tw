@@ -27,6 +27,8 @@
 
 .main__button {
 	@include align_list;
+	justify-content: start;
+	max-width: 135px;
 	text-decoration: underline;
 	color: var(--clearly-white);
 	@include change_color_with_pointer;
@@ -36,18 +38,6 @@
 	margin-left: 8px;
 	fill: currentColor;
 }
-
-// .main__list {
-// 	display: flex;
-// 	max-width: 1440px;
-// 	margin: 0 auto;
-// }
-
-// .main__item {
-// 	&:not(:last-child) {
-// 		margin-right: 24px;
-// 	}
-// }
 
 .splide {
 	margin: 0 auto;

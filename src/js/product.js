@@ -8,6 +8,7 @@ const activeClass = 'product__minor_button--active';
 const visuallyHiddenClass = 'visually_hidden';
 
 function changeProductInfo(event) {
+    event.preventDefault();
     const { target } = event;
     const targetAlreadyActive = target.classList.contains(activeClass);
     if (target === productDescriptionButton) {

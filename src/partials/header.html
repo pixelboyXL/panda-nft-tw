@@ -1,7 +1,11 @@
 <header class="header">
     <div class="container">
         <a href="./index.html" class="logo primary_font">
-            <img src="./images/logo.png" alt="Panda_face" class="logo__image">
+            <img
+                srcset="./images/logo.png 1x, ./images/logo@2.png 2x"
+                src="./images/logo.png"
+                alt="Panda_face"
+                class="logo__image">
             Panda NFT
         </a>
         <nav>
@@ -26,9 +30,9 @@
                 </li>
             </ul>
         </nav>
-        <button type="button" class="primary_button primary_font" data-development>
+        <a href="" class="button primary_button primary_font" data-development>
             Connect Wallet
-        </button>
+        </a>
         <button type="button" class="button_to_top">
             <svg width="24" height="24">
                 <use href="./images/icons.svg#icon-arrow"></use>

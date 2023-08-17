@@ -18,6 +18,8 @@
 	--panda-form-border-color: #EEF2F6;
 	--panda-input-grey: #8F9CA9;
 	--panda-product-grey: #B8C1CC;
+	--panda-scrollbar-track: #343444;
+	--panda-scrollbar-thumb: #EBEBEB;
 	--clearly-white: white;
 	--just-grey: grey;
 }
@@ -73,8 +75,8 @@ body {
 		background-color: transparent;
 	}
 	&::-webkit-scrollbar-thumb {
-		background-color: var(--panda-light-blue);
-		border-radius: 4px;
 		border: 6px solid transparent;
+		border-radius: 4px;
+		background-color: var(--panda-light-blue);
 	}
 }

@@ -47,7 +47,21 @@
 
 .product__minor_offers_wrap {
     display: flex;
-    padding-left: 94px;
+    max-width: 1200px;
+    max-height: 170px;
+    padding-left: 85px;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 3.5px;
+		background-color: var(--panda-scrollbar-track);
+	}
+	&::-webkit-scrollbar-thumb {
+        border-radius: 3.5px;
+		background-color: var(--panda-scrollbar-thumb);
+	}
 }
 
 .product__minor_offers_list {
@@ -67,7 +81,7 @@
 }
 
 .product__minor_image {
-    @include dynamic_image($mw: 56px, $w:56px, $mh: 56px, $br: 8px);
+    @include dynamic_image($mw: 56px, $w:56px, $mh: 56px, $br: 16px);
 }
 
 .product__minor_check_icon {

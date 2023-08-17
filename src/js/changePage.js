@@ -19,7 +19,8 @@ function goToMain() {
     };
 };
 
-function goToDiscover() {
+function goToDiscover(event) {
+    event.preventDefault();
     currentDiscoverLink();
     if (!location.pathname.includes(indexGitHub1)) {
         location.pathname = discoverHtml;
@@ -28,8 +29,8 @@ function goToDiscover() {
     };
 };
 
-export function goToProduct() {
-    console.log('hey');
+export function goToProduct(event) {
+    event.preventDefault();
     if (location.pathname === productHtml || location.pathname === productGitHub) {
         scrollToTop();
         ifSuccess();
