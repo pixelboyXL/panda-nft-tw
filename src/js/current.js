@@ -1,4 +1,4 @@
-import { homeLink, discoverLink } from "./refs";
+import { homeLink, discoverLink, homeLinkMob, discoverLinkMob } from "./refs";
 import { wrongAdress } from "./notiflix";
 
 const indexHtml1 = '/';
@@ -12,6 +12,7 @@ export const discoverGitHub = '/panda-nft-tw/discover.html';
 export const productGitHub = '/panda-nft-tw/product.html';
 
 export const currentClass = 'current';
+const currentMobClass = 'current_mob';
 
 switch (location.pathname) {
     case indexHtml1:
@@ -46,9 +47,13 @@ switch (location.pathname) {
 export function currentHomeLink() {
     homeLink.classList.add(currentClass);
     discoverLink.classList.remove(currentClass);
+    homeLinkMob.classList.add(currentMobClass);
+    discoverLinkMob.classList.remove(currentMobClass);
 };
 
 export function currentDiscoverLink() {
     homeLink.classList.remove(currentClass);
     discoverLink.classList.add(currentClass);
+    homeLinkMob.classList.remove(currentMobClass);
+    discoverLinkMob.classList.add(currentMobClass);
 };

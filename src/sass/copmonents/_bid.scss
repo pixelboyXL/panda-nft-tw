@@ -1,13 +1,39 @@
 .bid_list {
-    display: flex;
-    column-gap: 24px;
+    @include lap {
+        display: flex;
+        column-gap: 12px;
+    }
+    @include desk {
+        column-gap: 24px;
+    }
 }
 
 .bid_item {
-    padding: 24px;
+    width: 310px;
+    margin: 0 auto;
+    padding: 14px;
     border-radius: 16px;
     background-color: var(--panda-second-medium-blue);
-    @include scale_with_pointer;
+    cursor: pointer;
+    @include tab {
+        width: 384px;
+        padding: 24px;
+    }
+    @include lap {
+        width: 309px;
+        padding: 14px;
+    }
+    @include desk {
+        width: 384px;
+        padding: 24px;
+        @include scale;
+    }
+    &:not(:last-child) {
+        margin-bottom: 24px;
+        @include lap {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .bid_image_wrap {
@@ -15,8 +41,17 @@
 }
 
 .bid_image {
-    @include dynamic_image($mw: 336px, $w:336px, $mh: 352px, $br: 16px);
+    @include dynamic_image($mw: 280px, $w:280px, $mh: 352px, $br: 16px);
     margin-bottom: 24px;
+    @include tab {
+        @include dynamic_image($mw: 336px, $w:336px, $mh: 352px, $br: 16px);
+    }
+    @include lap {
+        @include dynamic_image($mw: 281px, $w:281px, $mh: 352px, $br: 16px);
+    }
+    @include desk {
+        @include dynamic_image($mw: 336px, $w:336px, $mh: 352px, $br: 16px);
+    }
 }
 
 .bid_icon_wrap {
@@ -96,5 +131,8 @@
     border-radius: 16px;
     background-color: var(--panda-light-blue);
     box-shadow: var(--panda-first-btn-shadow);
-    @include scale_with_pointer;
+    cursor: pointer;
+    @include desk {
+        @include scale;
+    }
 }

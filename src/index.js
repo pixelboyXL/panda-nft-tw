@@ -7,3 +7,4 @@ import "./js/pagination";
 import "./js/product";
 import "./js/notiflix";
 import "./js/splide";
+import "./js/mob_menu";

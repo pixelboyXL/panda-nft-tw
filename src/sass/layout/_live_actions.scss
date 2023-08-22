@@ -1,5 +1,11 @@
 .live_actions {
     position: relative;
+    .title_font {
+        margin-bottom: 24px;
+        @include lap {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .live_actions__ornament {

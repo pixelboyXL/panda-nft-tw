@@ -117,5 +117,11 @@
         <symbol id="icon-arrow-right" viewBox="0 0 32 32">
             <path fill="none" stroke="currentColor" style="stroke: var(--color1, currentColor)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M12 26.56l8.693-8.693c1.027-1.027 1.027-2.707 0-3.733l-8.693-8.693"></path>
         </symbol>
+        <symbol id="icon-open" viewBox="0 0 32 32">
+            <path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 32 32">
+            <path d="M23.733 10.304l-1.504-1.504-5.963 5.963-5.963-5.963-1.504 1.504 5.963 5.963-5.963 5.963 1.504 1.504 5.963-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.963z"></path>
+        </symbol>
     </defs>
 </svg>

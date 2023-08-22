@@ -1,16 +1,21 @@
-import { homeLink, discoverLink, productMoreButton } from "./refs";
+import { homeLink, discoverLink, productMoreButton, menu, homeLinkMob, discoverLinkMob } from "./refs";
 import { indexHtml2, discoverHtml, productHtml, indexGitHub1, indexGitHub2, discoverGitHub, productGitHub, currentHomeLink, currentDiscoverLink } from "./current";
 import { scrollToTop } from "./scroll";
 import { ifSuccess } from "./notiflix";
+import { toggleMenu } from "./mob_menu";
 
 homeLink.addEventListener('click', goToMain);
 discoverLink.addEventListener('click', goToDiscover);
+
+homeLinkMob.addEventListener('click', goToMain);
+discoverLinkMob.addEventListener('click', goToDiscover);
 
 if (productMoreButton) {
     productMoreButton.addEventListener('click', goToDiscover);
 };
 
 function goToMain() {
+    toggleMenu();
     currentHomeLink();
     if (!location.pathname.includes(indexGitHub1)) {
         location.pathname = indexHtml2;
@@ -19,8 +24,8 @@ function goToMain() {
     };
 };
 
-function goToDiscover(event) {
-    event.preventDefault();
+function goToDiscover() {
+    toggleMenu();
     currentDiscoverLink();
     if (!location.pathname.includes(indexGitHub1)) {
         location.pathname = discoverHtml;
@@ -31,6 +36,7 @@ function goToDiscover(event) {
 
 export function goToProduct(event) {
     event.preventDefault();
+    toggleMenu();
     if (location.pathname === productHtml || location.pathname === productGitHub) {
         scrollToTop();
         ifSuccess();

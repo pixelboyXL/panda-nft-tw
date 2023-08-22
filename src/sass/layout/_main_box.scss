@@ -1,20 +1,34 @@
 .main__box {
-	padding-top: 56px;
-	padding-bottom: 160px;
+	padding-top: 28px;
+	padding-bottom: 80px;
+	@include tab {
+		padding-top: 56px;
+		padding-bottom: 160px;
+	}
 }
 
 .discover {
+	padding-bottom: 60px;
+	@include tab {
 	padding-bottom: 120px;
+	}
 	.container {
-		@include align_list_justify_center;
-		margin-bottom: 56px;
+		margin-bottom: 28px;
+		@include tab {
+			margin-bottom: 56px;
+			@include align_list_justify_center;
+		}
 	}
 }
 
 .main__title {
 	@include font($fs:64px, $fw:700, $lh:80px);
-	margin-right: 24px;
 	max-width: 682px;
+	margin-bottom: 12px;
+	@include tab {
+		margin-right: 24px;
+		margin-bottom: 0;
+	}
 }
 
 .main__after_title_wrap {
@@ -22,7 +36,10 @@
 }
 
 .main__after_title {
-	margin-bottom: 24px;
+	margin-bottom: 12px;
+	@include tab {
+		margin-bottom: 24px;
+	}
 }
 
 .main__button {
@@ -48,5 +65,8 @@
 }
 
 .splide__image {
-	@include dynamic_image($mw: 498px, $w:498px, $mh: 352px, $br: 16px);
+	@include dynamic_image($mw: 398px, $w:398px, $mh: 252px, $br: 16px);
+	@include lap {
+		@include dynamic_image($mw: 498px, $w:498px, $mh: 352px, $br: 16px);
+	}
 }

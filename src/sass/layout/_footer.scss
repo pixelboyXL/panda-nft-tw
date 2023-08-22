@@ -4,19 +4,32 @@
 	padding-bottom: 64px;
 	overflow: hidden;
 	.container {
-		display: flex;
-		justify-content: space-between;
+		@include tab {
+			display: flex;
+			justify-content: space-between;
+		}
 	}
 }
 
 .footer__logo_wrap {
 	max-width: 393px;
+	margin-bottom: 48px;
+	@include tab {
+		max-width: 160px;
+		margin-bottom: 0;
+	}
+	@include lap {
+		max-width: 393px;
+	}
 	.logo {
 		max-width: 150px;
 		margin-bottom: 24px;
 	}
 	.text_font_1 {
-		margin-bottom: 112px;
+		margin-bottom: 24px;
+		@include tab {
+			margin-bottom: 112px;
+		}
 	}
 	.text_font_2 {
 		color: var(--clearly-white);
@@ -28,6 +41,14 @@
 .address {
 	.minor_title_font {
 		margin-bottom: 24px;
+	}
+}
+
+.footer__resources_wrap,
+.footer__company_wrap {
+	margin-bottom: 48px;
+	@include tab {
+		margin-bottom: 0;
 	}
 }
 
@@ -67,6 +88,10 @@
 }
 
 .footer__ornament {
-	bottom: -100%;
-	left: -35%;
+		bottom: 10%;
+		left: -35%;
+	@include tab {
+		bottom: -100%;
+		left: -35%;
+	}
 }

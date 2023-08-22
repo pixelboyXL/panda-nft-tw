@@ -1,6 +1,6 @@
 const refs = {
-  homeLink: document.getElementById('home'),
-  discoverLink: document.getElementById('discover'),
+  homeLink: document.querySelector('[data-home]'),
+  discoverLink: document.querySelector('[data-discover]'),
   bidHeart: document.querySelectorAll('.bid_icon'),
   bidButton:document.querySelectorAll('.bid_button'),
   productMoreButton: document.querySelector('.product__more_button'),
@@ -17,6 +17,11 @@ const refs = {
   paginationPrevButton: document.querySelector('.pagination__prev_button'),
   paginationLinks: document.querySelectorAll('.pagination__item'),
   paginationNextButton: document.querySelector('.pagination__next_button'),
+  openMenuBtn: document.querySelector('[data-menu-open]'),
+  closeMenuBtn: document.querySelector('[data-menu-close]'),
+  menu: document.querySelector('[data-menu]'),
+  homeLinkMob: document.querySelector('[data-home-mob]'),
+  discoverLinkMob: document.querySelector('[data-discover-mob]'),
 };
 
 export const {
@@ -38,4 +43,9 @@ export const {
   paginationPrevButton,
   paginationLinks,
   paginationNextButton,
+  openMenuBtn,
+  closeMenuBtn,
+  menu,
+  homeLinkMob,
+  discoverLinkMob,
 } = refs;

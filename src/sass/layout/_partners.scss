@@ -1,18 +1,26 @@
 .partners {
-    padding-bottom: 151px;
+    padding-bottom: 75px;
     position: relative;
+    @include tab {
+        padding-bottom: 151px;
+    }
 }
 
 .partners__list,
 .partners__icon {
     @include align_list_justify_center;
+    flex-flow: row wrap;
 }
 
 .partners__item {
-    &:not(:last-child) {
-        margin-right: 41px;
-    }
     @include scale;
+    &:not(:last-child) {
+        margin-bottom: 41px;
+        @include tab {
+            margin-right: 41px;
+            margin-bottom: 0;
+        }
+    }
 }
 
 .partners__link {

@@ -8,13 +8,13 @@
                 class="logo__image">
             Panda NFT
         </a>
-        <nav>
+        <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <p class="primary_font" id="home">Home</p>
+                    <p class="primary_font" data-home>Home</p>
                 </li>
                 <li class="nav__item">
-                    <p class="primary_font" id="discover">Discover</p>
+                    <p class="primary_font" data-discover>Discover</p>
                 </li>
                 <li class="nav__item">
                     <p class="primary_font" data-development>Docs</p>
@@ -30,7 +30,7 @@
                 </li>
             </ul>
         </nav>
-        <a href="" class="button primary_button primary_font" data-development>
+        <a href="" class="button primary_button primary_font header__primary_button" data-development>
             Connect Wallet
         </a>
         <button type="button" class="button_to_top">
@@ -38,5 +38,6 @@
                 <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
         </button>
+        <include src="./partials/mob_menu.html"></include>
     </div>
 </header>

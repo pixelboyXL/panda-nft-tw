@@ -8,7 +8,9 @@
 }
 
 .create_sell__list {
-    @include align_list;
+    @include lap {
+        @include align_list;
+    }
 }
 
 .create_sell__item {
@@ -20,7 +22,11 @@
     background-color: var(--panda-second-medium-blue);
     text-align: center;
     &:not(:last-child) {
-        margin-right: 30px;
+        margin-bottom: 30px;
+        @include lap {
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
     }
     &:nth-child(2) {
         background-color: transparent;

@@ -1,12 +1,20 @@
 .container {
-	// width: 100%;
-	max-width: 1240px;
+	width: 100%;
 	padding-right: 20px;
 	padding-left: 20px;
 	margin: 0 auto;
-	// @include desk {
-	// 	width: 1440px;
-	// }
+	@include mob {
+		width: 360px;
+	}
+	@include tab {
+		width: 768px;
+	}
+	@include lap {
+		width: 991px;
+	}
+	@include desk {
+		width: 1240px;
+	}
 }
 
 .primary_font {
@@ -58,9 +66,12 @@
 }
 
 .title_wrap {
-	display: flex;
-	justify-content: space-between;
+	text-align: center;
 	margin-bottom: 56px;
+	@include lap {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .current {
@@ -75,6 +86,10 @@
 		left: 0;
 		bottom: 0;
 	}
+}
+
+.current_mob {
+	color: var(--panda-light-blue);
 }
 
 .button {
@@ -97,7 +112,10 @@
 	border-radius: 16px;
 	border: 1px solid var(--panda-light-blue);
 	color: var(--clearly-white);
-	@include scale_with_pointer;
+	cursor: pointer;
+	@include desk {
+		@include scale;
+	}
 }
 
 .secondary_button {
@@ -119,7 +137,10 @@
 }
 
 .section {
-	padding-bottom: 160px;
+	padding-bottom: 80px;
+	@include tab {
+		padding-bottom: 160px;
+	}
 }
 
 .logo {
@@ -157,7 +178,7 @@
 	opacity: 0;
 	visibility: hidden;
 	border: 1px solid var(--panda-light-blue);
-	background-color: transparent;
+	background-color: var(--panda-first-medium-blue);
 	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	&:hover {
 		cursor: pointer;
@@ -183,8 +204,8 @@
 	overflow: hidden;
 }
 
-// .is_hidden {
-// 	display: none;
-// 	pointer-events: none;
-// 	visibility: hidden;
-// }
+.is_hidden {
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+}

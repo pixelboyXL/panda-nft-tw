@@ -1,0 +1,104 @@
+.mob_menu_font {
+	@include font($fs: 18px, $fw: 500, $lh: 22px);
+}
+
+.mob_menu__icon-open,
+.mob_menu__icon-close {
+	margin-left: auto;
+	fill: currentColor;
+	@include change_color_with_pointer;
+}
+
+.mob_menu__icon-open {
+	@include lap {
+		display: none;
+	}
+}
+
+.mob_menu {
+	position: fixed;
+	z-index: 1;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	background-color: var(--panda-dark-blue);
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	.container {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		@include mob {
+			position: relative;
+		}
+		@include tab {
+			width: 768px;
+		}
+	}
+	.primary_button {
+		margin-bottom: 24px;
+	}
+}
+
+.mob_menu__top,
+.mob_menu__bottom {
+	margin-right: auto;
+}
+
+.mob_menu__icon-close {
+	position: absolute;
+	top: 38px;
+	right: 10px;
+	@include mob {
+		top: -8px;
+		right: 21px;
+	}
+	@include tab {
+		right: 21px;
+	}
+}
+
+.mob_menu__list {
+	margin-bottom: 48px;
+}
+
+.mob_menu__item {
+	&:not(:last-child) {
+		margin-bottom: 32px;
+	}
+	p {
+		@include change_color_with_pointer;
+	}
+}
+
+.mob_menu__address {
+	display: block;
+	max-width: 179px;
+	margin-bottom: 64px;
+	color: var(--panda-grey);
+	@include change_color_with_pointer;
+}
+
+.mob_menu__social {
+	display: flex;
+}
+
+.mob_menu__social_item {
+	&:not(:last-child) {
+		margin-right: 10px;
+		padding-right: 10px;
+		border-right: 1px solid var(--panda-light-blue);
+	}
+	a {
+		@include change_color_with_pointer;
+	}
+}
+
+.mob_menu__ornament {
+	bottom: 15%;
+    right: -25%;
+}
