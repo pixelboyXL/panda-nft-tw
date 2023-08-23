@@ -108,12 +108,13 @@
 .product__more_button {
     min-width: 176px;
     border: 2px solid var(--panda-light-blue);
-    text-align: center;
 }
 
 .product__main_button,
 .product__more_button {
     padding: 16px;
     border-radius: 8px;
-    @include scale_with_pointer;
+    @include lap {
+		@include scale_with_pointer;
+	}
 }

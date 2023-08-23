@@ -13,7 +13,9 @@
 }
 
 .partners__item {
-    @include scale;
+    @include lap {
+		@include scale_with_pointer;
+	}
     &:not(:last-child) {
         margin-bottom: 41px;
         @include tab {

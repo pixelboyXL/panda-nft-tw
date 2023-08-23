@@ -2,29 +2,41 @@
     position: relative;
     h2 {
         text-align: center;
+    }
+}
+
+.hot_nft h2,
+.hot_nft__button_list,
+.hot_nft__bid_list {
+    margin-bottom: 28px;
+    @include tab {
         margin-bottom: 56px;
     }
 }
 
 .hot_nft__button_list {
     @include align_list_justify_center;
-    margin-bottom: 56px;
+    flex-wrap: wrap;
+    gap: 12px;
+    text-align: center;
 }
 
 .hot_nft__button_item {
-    &:not(:last-child) {
-        margin-right: 24px;
+    flex-grow: 1;
+    @include tab {
+        flex-grow: 0;
     }
 }
 
 .hot_nft__bid_list {
     flex-wrap: wrap;
     row-gap: 56px;
-    margin-bottom: 56px;
 }
 
 .hot_nft__bid_item {
-    @include small_scale_with_pointer;
+    @include lap {
+		@include scale_with_pointer;
+	}
 }
 
 .hot_nft__ornament {

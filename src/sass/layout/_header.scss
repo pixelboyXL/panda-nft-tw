@@ -7,7 +7,8 @@
 	}
 }
 
-.nav {
+.nav,
+.header__primary_button {
 	display: none;
 	@include lap {
 		display: block;
@@ -25,12 +26,5 @@
 	}
 	p {
 		@include change_color_with_pointer;
-	}
-}
-
-.header__primary_button {
-	display: none;
-	@include lap {
-		display: block;
 	}
 }

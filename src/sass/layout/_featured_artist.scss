@@ -1,15 +1,44 @@
+.featured_artist {
+    .title_font {
+        margin-bottom: 24px;
+        @include lap {
+            margin-bottom: 0;
+        }
+    }
+}
+
 .featured_artist__list {
     @include align_list_justify_center;
+    flex-wrap: wrap;
+    gap: 20px;
+    @include tab {
+        gap: 40px;
+    }
 }
 
 .featured_artist__item {
+    width: 130px;
+    flex-grow: 1;
     text-align: center;
-    @include scale_with_pointer;
-    &:nth-child(2n) {
-        flex-grow: 1;
+    @include tab {
+        width: 190px;
     }
-    &:not(:last-child) {
-        margin-right: 40px;
+    @include lap {
+        flex-grow: 0;
+        @include scale_with_pointer;
+    }
+    @include desk {
+        width: auto;
+    }
+    &:nth-child(2n) {
+        @include desk {
+            flex-grow: 1;
+        }
+    }
+    &:last-child {
+        @include desk {
+            flex-grow: 0;
+        }
     }
     .minor_title_font {
         margin-bottom: 16px;
@@ -33,7 +62,10 @@
 }
 
 .featured_artist__image {
-    @include dynamic_image($mw: 120px, $w:120px, $mh: 120px, $br: 50%);
+    @include dynamic_image($mw: 100px, $w:100px, $mh: 100px, $br: 50%);
+    @include tab {
+        @include dynamic_image($mw: 120px, $w:120px, $mh: 120px, $br: 50%);
+    }
 }
 
 .featured_artist__check_icon {
@@ -43,5 +75,9 @@
 }
 
 .featured_artist__name {
-    @include dynamic_name($mw: 200px, $mh: 32px);
+    margin: 0 auto;
+    @include dynamic_name($mw: 130px, $mh: 62px);
+    @include tab {
+        @include dynamic_name($mw: 200px, $mh: 32px);
+    }
 }

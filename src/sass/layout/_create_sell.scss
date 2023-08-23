@@ -3,8 +3,11 @@
     text-align: center;
     margin-top: 0;
     margin-right: auto;
-    margin-bottom: 56px;
+    margin-bottom: 28px;
     margin-left: auto;
+    @include tab {
+        margin-bottom: 56px;
+    }
 }
 
 .create_sell__list {
@@ -24,8 +27,11 @@
     &:not(:last-child) {
         margin-bottom: 30px;
         @include lap {
-            margin-right: 30px;
+            margin-right: 25px;
             margin-bottom: 0;
+        }
+        @include desk {
+            margin-right: 30px;
         }
     }
     &:nth-child(2) {

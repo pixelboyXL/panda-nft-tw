@@ -1,11 +1,24 @@
 .collectibles__box {
-    padding-top: 80px;
-    padding-bottom: 160px;
+    padding-top: 40px;
+	padding-bottom: 80px;
+	@include tab {
+		padding-top: 80px;
+        padding-bottom: 160px;
+	}
 }
 
 .collectibles {
     .title_font {
         text-align: center;
+    }
+}
+
+.collectibles .title_font,
+.collectibles__form,
+.collectibles__button_list,
+.collectibles__bid_list {
+    margin-bottom: 28px;
+    @include tab {
         margin-bottom: 56px;
     }
 }
@@ -14,7 +27,6 @@
     @include align_list;
     margin-top: 0;
     margin-right: auto;
-    margin-bottom: 56px;
     margin-left: auto;
     padding: 16px;
     max-width: 800px;
@@ -42,30 +54,42 @@
     padding: 12px;
     border-radius: 20px;
     background-color: var(--panda-light-blue);
-    @include scale_with_pointer;
+    @include lap {
+        @include scale_with_pointer;
+    }
 }
 
 .collectibles__button_list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    text-align: center;
+    @include tab {
+        justify-content: center;
+    }
 }
 
 .collectibles__button_item {
     &:nth-child(1) {
-        margin-right: auto;
+        margin: 0 auto;
         .secondary_button {
             @include align_list;
             justify-content: space-between;
             min-width: 175px;
         }
+        @include tab {
+            margin: 0;
+        }
+        @include desk {
+            margin-right: auto;
+        }
     }
     &:not(:first-child) {
-        margin-left: 24px;
+        flex-grow: 1;
+        @include tab {
+            flex-grow: 0;
+        }
     }
-}
-
-.collectibles__button_list,
-.collectibles__bid_list {
-    margin-bottom: 56px;
 }
 
 .collectibles__bid_list {

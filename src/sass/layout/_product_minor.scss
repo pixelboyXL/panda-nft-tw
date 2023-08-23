@@ -10,8 +10,10 @@
     padding-right: 40px;
     padding-bottom: 16px;
     padding-left: 40px;
-    @include scale_with_pointer;
     color: var(--panda-grey);
+    @include lap {
+		@include scale_with_pointer;
+	}
     &--active {
         color: var(--clearly-white);
         border-radius: 8px;
