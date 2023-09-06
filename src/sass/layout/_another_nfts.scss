@@ -1,0 +1,6 @@
+.another_nfts .title_font {
+    margin-bottom: 24px;
+    @include tab {
+        margin-bottom: 0;
+    }
+}

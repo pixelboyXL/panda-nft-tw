@@ -2,13 +2,13 @@
     <div class="container">
         <h2 class="visually_hidden">Details</h2>
         <ul class="product__minor_button_list">
-            <li>
+            <li class="product__minor_button_item">
                 <a href="" class="button price_font_1 product__minor_button product__minor_button--active" id="description">Description</a>
             </li>
-            <li>
+            <li class="product__minor_button_item">
                 <a href="" class="button price_font_1 product__minor_button" id="offers">Offers</a>
             </li>
-            <li>
+            <li class="product__minor_button_item">
                 <a href="" class="button price_font_1 product__minor_button" id="price_history">Price History</a>
             </li>
         </ul>
@@ -358,7 +358,13 @@
             </ul>
         </div>
         <div class="product__minor_price_history_wrap visually_hidden">
-            <img src="./images/product_price_history.png" alt="product_price_history">
+            <picture>
+                <source srcset="./images/product_price_history.png"
+                media="(min-width: 768px)">
+                <source srcset="./images/product_price_history_mob.png"
+                media="(min-width: 0px)">
+                <img src="./images/product_price_history.png" alt="product_price_history">
+            </picture>
         </div>
     </div>
 </section>
