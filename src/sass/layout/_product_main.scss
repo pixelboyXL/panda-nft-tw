@@ -27,6 +27,10 @@
 
 .product__image {
     @include dynamic_image($mw: 320px, $w:320px, $mh: 283px, $br: 24px);
+    @include tab {
+        margin: 0 auto;
+        @include dynamic_image($mw: 460px, $w:460px, $mh: 400px, $br: 24px);
+    }
     @include lap {
         @include dynamic_image($mw: 585px, $w:585px, $mh: 508px, $br: 24px);
     }
@@ -43,6 +47,9 @@
     padding-left: 12px;
     border-radius: 16px;
     background-color: var(--panda-first-medium-blue);
+    @include tab {
+        transform: translate(-110%, -25%);
+    }
     @include lap {
         transform: translate(-60%, -25%);
         padding-top: 16px;
@@ -60,7 +67,9 @@
 }
 
 .product__main_description {
-    max-width: 575px;
+    @include lap {
+        max-width: 575px;
+    }
 }
 
 .product__title,
@@ -70,7 +79,7 @@
 
 .product__main_artist_list,
 .product__main_button_list {
-    @include lap {
+    @include tab {
         display: flex;
         justify-content: space-between;
     }

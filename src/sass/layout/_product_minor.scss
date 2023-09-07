@@ -35,7 +35,7 @@
 }
 
 .product__minor_description_wrap {
-    @include tab {
+    @include lap {
         padding-left: 100px;
     }
 }
@@ -67,7 +67,7 @@
     max-width: 1200px;
     max-height: 170px;
     overflow-x: hidden;
-    @include tab {
+    @include lap {
         padding-left: 85px;
     }
     &::-webkit-scrollbar {
@@ -86,7 +86,11 @@
 .product__minor_offers_list {
     display: flex;
     flex-wrap: wrap;
-    gap: 48px;
+    justify-content: center;
+    gap: 24px;
+    @include lap {
+        gap: 48px;
+    }
 }
 
 .product__minor_offers_item {
