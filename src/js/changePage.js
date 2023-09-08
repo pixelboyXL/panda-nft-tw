@@ -36,12 +36,12 @@ function goToDiscover() {
 
 export function goToProduct(event) {
     event.preventDefault();
-    toggleMenu();
     if (location.pathname === productHtml || location.pathname === productGitHub) {
         scrollToTop();
         ifSuccess();
         return;
     };
+    toggleMenu();
     currentHomeLink();
     if (!location.pathname.includes(indexGitHub1)) {
         location.pathname = productHtml;

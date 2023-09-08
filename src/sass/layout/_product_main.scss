@@ -1,7 +1,7 @@
 .product__box {
     padding-top: 24px;
     padding-bottom: 80px;
-    @include lap {
+    @include desk {
 		padding-top: 48px;
         padding-bottom: 160px;
 	}
@@ -19,7 +19,7 @@
 
 .product__image_wrap {
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
     @include lap {
         margin-bottom: 0;
     }
@@ -32,6 +32,9 @@
         @include dynamic_image($mw: 460px, $w:460px, $mh: 400px, $br: 24px);
     }
     @include lap {
+        @include dynamic_image($mw: 460px, $w:460px, $mh: 470px, $br: 24px);
+    }
+    @include desk {
         @include dynamic_image($mw: 585px, $w:585px, $mh: 508px, $br: 24px);
     }
 }
@@ -51,6 +54,9 @@
         transform: translate(-110%, -25%);
     }
     @include lap {
+        transform: translate(-50%, -25%);
+    }
+    @include desk {
         transform: translate(-60%, -25%);
         padding-top: 16px;
         padding-right: 24px;
@@ -68,13 +74,19 @@
 
 .product__main_description {
     @include lap {
+        max-width: 475px;
+    }
+    @include desk {
         max-width: 575px;
     }
 }
 
 .product__title,
 .product__after_title {
-    margin-bottom: 24px;
+    margin-bottom: 12px;
+    @include desk {
+        margin-bottom: 24px;
+    }
 }
 
 .product__main_artist_list,
@@ -88,7 +100,10 @@
 .product__main_price_list {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    @include desk {
+        margin-bottom: 40px;
+    }
 }
 
 .product__main_price_item {
@@ -108,14 +123,13 @@
     margin-bottom: 28px;
     border-radius: 16px;
     background-color: var(--panda-second-medium-blue);
-    @include tab {
+    @include desk {
         margin-bottom: 56px;
     }
 }
 
 .product__main_artist_item {
     @include align_list_justify_center;
-    // @include align_list;
     img {
         margin-right: 16px;
     }
@@ -154,6 +168,12 @@
 .product__main_button {
     min-width: 275px;
     background-color: var(--panda-light-blue);
+    @include lap {
+        min-width: 225px;
+    }
+    @include desk {
+        min-width: 275px;
+    }
     &--active {
         border: 1.5px solid var(--panda-light-blue);
         background: var(--panda-second-btn-rgba);
